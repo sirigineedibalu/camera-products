@@ -1,0 +1,27 @@
+.mointor-main-img {
+  background-image: url("https://www.pramaindia.in/wp-content/uploads/2023/05/Website_Banner-01-min-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.monitor-back-page {
+  width: 450px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 7px;
+  font-size: 22px;
+}
+.btn {
+  color: white;
+  width: 150px;
+  height: 55px;
+}

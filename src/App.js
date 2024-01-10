@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Courosual } from "./components/Courosual/Courosual";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { MiddleBar } from "./components/MiddleBar/MiddleBar";
+import { MointorEveryMoment } from "./components/MointorEveryMoment/MointorEveryMoment";
+import { NewProducts } from "./components/NewProducts/NewProducts";
+import { Trendingproducts } from "./components/Trendingproducts/Trendingproducts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Courosual />
+      <MiddleBar />
+      <NewProducts />
+      <MointorEveryMoment />
+      <Trendingproducts />
+      <Footer />
     </div>
   );
 }
