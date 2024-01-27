@@ -1,0 +1,56 @@
+.np-img-container {
+  background-image: url("https://pbs.twimg.com/media/Ez4sxoVVoAo37Qt.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#pgheading {
+  position: absolute;
+  top: 65%;
+  left: 2%;
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  /* border: 1px solid red; */
+}
+.pg-heaader-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pg-hero-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+.np-fedd-data {
+  width: 500px;
+  gap: 2rem;
+  /* border: 1px solid red; */
+}
+.np-img-div {
+  width: 550px;
+  /* background-color: rgba(175, 168, 168, 0.712); */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#nph4heading {
+  color: rgb(36, 95, 255);
+}
+.np-middle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 90%;
+}

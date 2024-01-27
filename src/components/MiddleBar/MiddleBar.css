@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .middle-container {
@@ -44,7 +44,7 @@
   left: 12%;
   z-index: -1;
   border-radius: 3px;
-  background-color: #ffd363;
+  background-color: #ff67eb33;
 }
 .middle-color-con1 {
   width: 250px;
@@ -54,5 +54,5 @@
   left: 70%;
   z-index: -1;
   border-radius: 3px;
-  background-color: #ffd363;
+  background-color: #ff67eb33;
 }

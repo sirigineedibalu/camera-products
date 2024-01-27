@@ -1,0 +1,66 @@
+.o-s-container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.ossoul-backgroundimg-con {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0.05;
+  z-index: -1;
+}
+.oursolu-maindiv-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.our-sol-main-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border: 1px solid green; */
+}
+#icon-style:hover {
+  color: rgb(255, 102, 0);
+}
+.Our-solution-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  padding: 2px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.Our-solution-con:hover {
+  background-color: rgb(38, 128, 212);
+  color: white;
+}
+.our-sol-matter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.our-btn {
+  width: 70px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  outline-style: none;
+  /* color: rgb(0, 0, 0); */
+}
+/* .our-btn:hover {
+  color: rgb(255, 255, 255);
+} */

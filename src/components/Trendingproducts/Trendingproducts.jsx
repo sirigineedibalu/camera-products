@@ -1,5 +1,6 @@
 import "./Trendingproducts.css";
 import { Products } from "../Data/Newproducts";
+import { Link } from "react-router-dom";
 export const Trendingproducts = () => {
   return (
     <div>
@@ -10,16 +11,17 @@ export const Trendingproducts = () => {
         {Products.map((i) => (
           <div className="trend-main-imgcon">
             <div className="trend-img-conta">
-              <img
-                style={{
-                  width: "100%",
-                  height: "70%",
-                }}
-                src={i.image}
-                alt=""
-              />
-
-              <span>{i.name}</span>
+              <Link to="/productDetails">
+                <img
+                  style={{
+                    width: "100%",
+                    height: "70%",
+                  }}
+                  src={i.image}
+                  alt=""
+                />
+              </Link>
+              <span style={{ color: "blue" }}>{i.name}</span>
             </div>
           </div>
         ))}

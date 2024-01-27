@@ -60,7 +60,7 @@ export const Courosual = () => {
           <div className="header-coursoual-container">
             <img
               style={{ width: "100%", height: "100%" }}
-              src="https://www.hifocuscctv.com/images/slider-bannar-33.jpeg"
+              src="https://www.hifocuscctv.com/images/WhatsAppImage2023-07-31at170108.jpeg"
               alt=""
             />
           </div>

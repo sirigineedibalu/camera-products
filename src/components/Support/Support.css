@@ -1,0 +1,52 @@
+.support-main-class {
+  gap: 2rem;
+}
+
+.support-hero-container {
+  background-image: url("https://www.hplaptopserviceindia.com/images/cctv-camera-service-provider.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+#h1support {
+  position: absolute;
+  top: 80%;
+  left: 2;
+  font-size: 60px;
+  color: white;
+}
+.support-header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* padding: 20px; */
+}
+.support-details-sec-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+.supp-div-con {
+  /* border: 1px solid black; */
+  width: 500px;
+  padding: 30px;
+  gap: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.supp-img-div {
+  width: 50%;
+  height: 200px;
+  border-radius: 7px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
