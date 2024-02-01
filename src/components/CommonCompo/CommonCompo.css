@@ -1,0 +1,87 @@
+.main__common__card {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 30px;
+}
+
+.sub__cams__card_head {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* height: 100px; */
+  justify-content: space-around;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.sub__cams__card {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+.single__smax__main__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  /* height: 150px; */
+  width: 100%;
+}
+.single__cams__details__head {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: rgb(13, 122, 224);
+
+  /* border-right: 1px solid black; */
+  color: #fff;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+.single__cams__details {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: rgb(13, 122, 224);
+  /* border: 1px solid black; */
+  color: #fff;
+  border-radius: 7px;
+  /* width: 150px; */
+  margin-left: 12px;
+}
+
+.main__all__cams__display__card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 3rem;
+}
+
+.main__cams__single__card {
+  width: 30%;
+  /* border: 1px solid red; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.21rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 7px;
+}
+.main__cams__single__card > img {
+  width: 70%;
+}

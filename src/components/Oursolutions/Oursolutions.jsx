@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Oursolution } from "../Data/Oursolutions";
 import "./Oursolutions.css";
 
@@ -33,7 +34,12 @@ export const Oursolutions = () => {
               <div className="our-sol-matter">
                 <h5>{i.name}</h5>
                 <span>{i.des}</span>
-                <button className="our-btn">Explore..</button>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/BankingSolutions"
+                >
+                  <span>Explore..</span>
+                </Link>
               </div>
             </div>
           ))}

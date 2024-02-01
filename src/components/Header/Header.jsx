@@ -55,14 +55,63 @@ export const Header = () => {
                       Network Cameras
                     </Link>
                   </span>
-                  <span>Network Video Recorders</span>
-                  <span>HD Analog Cameras</span>
-                  <span>HD DVRs</span>
-                  <span>Network Storage</span>
-                  <span>Codecs</span>
-                  <span>Accessories</span>
-                  <span>Client Software</span>
-                  <span>Phasing Out</span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/NetworkingVideos"
+                    >
+                      Network Video Recorders
+                    </Link>
+                  </span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/HDAnalog"
+                    >
+                      HD Analog Cameras
+                    </Link>
+                  </span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/HDdvrs"
+                    >
+                      HD DVRs
+                    </Link>
+                  </span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/NetworkStorage"
+                    >
+                      Network Storage
+                    </Link>
+                  </span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/Codec"
+                    >
+                      Codecs
+                    </Link>
+                  </span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/Accessories"
+                    >
+                      Accessories
+                    </Link>
+                  </span>
+                  <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/ClientSoftware"
+                    >
+                      Client Software
+                    </Link>
+                  </span>
+                  {/* <span>Phasing Out</span> */}
                 </div>
               )}
             </div>
@@ -79,7 +128,7 @@ export const Header = () => {
                 style={{ textDecoration: "none", color: "black" }}
                 to="/News-Feed"
               >
-                News&Feed
+                News&Events{" "}
               </Link>
             </span>
             <span>

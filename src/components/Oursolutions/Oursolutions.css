@@ -29,9 +29,9 @@
   width: 100%;
   /* border: 1px solid green; */
 }
-#icon-style:hover {
+/* #icon-style:hover {
   color: rgb(255, 102, 0);
-}
+} */
 .Our-solution-con {
   display: flex;
   flex-direction: row;
@@ -45,22 +45,25 @@
   border-radius: 5px;
 }
 .Our-solution-con:hover {
-  background-color: rgb(38, 128, 212);
-  color: white;
+  background-color: rgba(0, 162, 255, 0.87);
+  color: #fff;
 }
+
 .our-sol-matter {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* color: black; */
 }
-.our-btn {
+
+.our-button {
   width: 70px;
   height: 35px;
   background-color: transparent;
   border: none;
   outline-style: none;
-  /* color: rgb(0, 0, 0); */
+  color: rgb(0, 0, 0);
 }
-/* .our-btn:hover {
-  color: rgb(255, 255, 255);
-} */
+span > Link:hover {
+  color: #fff;
+}

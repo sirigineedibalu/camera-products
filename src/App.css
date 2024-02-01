@@ -7,12 +7,13 @@ body {
   /* font-family: "Roboto", sans-serif; */
 }
 * {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   display: none;
 }
-span {
+span,
+li {
   font-size: 18px;
 }

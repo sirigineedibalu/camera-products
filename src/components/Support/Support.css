@@ -3,7 +3,7 @@
 }
 
 .support-hero-container {
-  background-image: url("https://www.hplaptopserviceindia.com/images/cctv-camera-service-provider.jpg");
+  background-image: url("D:/projects/trinai/public/Images/Sliders/support.jpg");
   background-size: cover;
   width: 100%;
   height: 70vh;
@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   /* padding: 20px; */
 }
 .support-details-sec-div {

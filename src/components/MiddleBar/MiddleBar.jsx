@@ -11,7 +11,7 @@ export const MiddleBar = () => {
         <div className="middle-img-container">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="https://www.hifocuscctv.com/images/products/network-camera/HiFocus_cctv_8MPDomeCamera_HC-IPC-DE8800N3.png"
+            src="Images/11.png"
             alt=""
           />
         </div>
@@ -52,18 +52,18 @@ export const MiddleBar = () => {
         <div className="middle-img-container">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="https://www.hifocuscctv.com/images/home/smart-ip-cameras-1.png"
+            src="Images/smart-ip-cameras-1.png"
             alt=""
           />
         </div>
         <div className="middle-color-con1"></div>
       </div>
       {/* 3 */}
-      <div className="middle-container">
+      {/* <div className="middle-container">
         <div className="middle-img-container">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="https://www.hifocuscctv.com/images/products/network-camera/HiFocus_cctv_8MPDomeCamera_HC-IPC-DE8800N3.png"
+            src="Images/DOME (1).png"
             alt=""
           />
         </div>
@@ -83,9 +83,9 @@ export const MiddleBar = () => {
           </center>
         </div>
         <div className="middle-color-con"></div>
-      </div>
+      </div> */}
       {/* 4 */}
-      <div className="middle-container">
+      {/* <div className="middle-container">
         <div className="middle-img-matter">
           <h1>PROTECT YOUR LOVED ONES</h1>
           <h3>
@@ -104,12 +104,12 @@ export const MiddleBar = () => {
         <div className="middle-img-container">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="https://www.hifocuscctv.com/images/home/smart-ip-cameras-1.png"
+            src="Images/Bullet_1 (4).png"
             alt=""
           />
         </div>
         <div className="middle-color-con1"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

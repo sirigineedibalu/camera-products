@@ -6,7 +6,8 @@
   width: 100%;
   height: 15vh;
   padding: 10px 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: 0 8px 16px rgba(82, 220, 255, 0.1);
 }
 .header-img-container {
   width: 20%;
@@ -63,7 +64,7 @@
 }
 .header-dropdown-content > span:hover {
   background-color: rgb(41, 177, 240);
-  color: white;
+  /* color: rgb(243, 9, 9) !important; */
 }
 
 .header-dropdown:hover .header-dropdown-content {

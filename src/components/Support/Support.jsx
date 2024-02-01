@@ -5,7 +5,7 @@ export const Support = () => {
   return (
     <div className="support-main-class">
       <div className="support-hero-container">
-        <h1 id="h1support">Support</h1>
+        {/* <h1 id="h1support">Support</h1> */}
       </div>
       <div className="support-header-container">
         <div className="support-details-sec-div">

@@ -5,7 +5,7 @@ export const Aboutus = () => {
   return (
     <div>
       <div className="aboutus-image-container">
-        <h1 id="Aboutus">About us</h1>
+        {/* <h1 id="Aboutus">About us</h1> */}
       </div>
       <div className="about-side-midd">
         <div className="about-div-con">

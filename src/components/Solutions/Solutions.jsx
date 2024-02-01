@@ -4,7 +4,7 @@ export const Solutions = () => {
   return (
     <div>
       <div className="solution-main-div">
-        <h1 id="Solutionheading">Solutions</h1>
+        {/* <h1 id="Solutionheading">Solutions</h1> */}
       </div>
       <div className="sol-main-div">
         <div className="sol-first-division">
@@ -163,7 +163,7 @@ export const Solutions = () => {
                 crime investigation.
               </span>
             </div>
-            <div className="sol-background-div">
+            <div className="sol-background-div1">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
                 src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"

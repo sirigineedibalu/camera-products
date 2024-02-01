@@ -1,0 +1,55 @@
+.bank-img-heading {
+  position: relative;
+}
+
+.bank-img-container {
+  width: 100%;
+  height: 30vh;
+}
+.bank-heading {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+.bank-support-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.bank-hero-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.bank-side-images-main {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.bank-side-images {
+  width: 40%;
+  height: 50%;
+}
+.bank-side-images-slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 55%;
+}
+.bank-challenges-Solution-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.bank-solutions-image-div {
+  width: 90%;
+  height: 100vh;
+  margin-top: 40px;
+}

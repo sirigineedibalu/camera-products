@@ -1,591 +1,1556 @@
-export const PTZ = [
-  {
-    id: "1.3mp ptz",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/1.3MP/IPC6221ER-X20(P).png",
-    name: "ptz cameras",
-    des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
-  },
-  {
-    id: "1.3mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/1.3MP/IPC6221ER-X30(P).png",
-    name: "IPC6221ER-X30(P)",
-    des: "",
-  },
-  {
-    id: "1.3mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/1.3MP/IPC6221ER-X30(P).png",
-    name: "IPC6221LR-X20S(P)",
-    des: "",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC312SR-DVPF28 (40)-C",
-    des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC312SR-DVPF28 (40)-C",
-    des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC312SR-DVPF28 (40)-C",
-    des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "2mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/unv-2018/Network%20camera/ptz%20dome%20camera/2mp/IPC312SR-DVPF28%20(40)-C.PNG",
-    name: "IPC312SR-DVPF28 (40)-C",
-    des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
-  },
-  {
-    id: "3mp ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/3MP/IPC6253SR-X33.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "4k ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/4K/IPC6248SR-X22.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "4k ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/4K/IPC6248SR-X22.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "4k ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/4K/IPC6248SR-X22.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "4k ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Network%20camera/PTZ%20Dome/2mp/IPC6322SR-X33DUP.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "4k ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Network%20camera/PTZ%20Dome/4k/IPC6858SR-X22.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  {
-    id: "4k ptz",
-    iamge:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/PTZ-Dome-Cameras/4K/IPC6248SR-X22.png",
-    name: "IPC6252SR-X33U-E",
-    des: "IR anti-reflection window to increase the infrared transmittance",
-  },
-  //   bullet
+// export const PTZ = [
+//   {
+//     id: "1.3mp",
+//     image: "Images/PTZ_1.png",
+//     name: "ptz cameras",
+//     des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "1.3mp",
+//     image: "Images/PTZ_1.png",
+//     name: "IPC6221ER-X30(P)",
+//     des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "1.3mp",
+//     image: "Images/PTZ_2.png",
+//     name: "IPC6221LR-X20S(P)",
+//     des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC312SR-DVPF28 (40)-C",
+//     des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_2.png",
+//     name: "IPC312SR-DVPF28 (40)-C",
+//     des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_1.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_1.png",
+//     name: "IPC312SR-DVPF28 (40)-C",
+//     des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_2.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "2mp",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC312SR-DVPF28 (40)-C",
+//     des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "3mp",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "4k",
+//     image: "Images/PTZ_3.png",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "4k",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "4k",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "4k",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "4k",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+//   {
+//     id: "4k",
+//     image: "Images/PTZ_3.png",
+//     name: "IPC6252SR-X33U-E",
+//     des: "IR anti-reflection window to increase the infrared transmittance",
+//     subId: "ptz",
+//   },
+// ];
 
+export const newPTZ = [
   {
-    id: "1.3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2121SR3-PF36(60)(120)",
-    des: "Smart IR , up to 30 m (98 ft) IR distance",
-  },
-  {
-    id: "1.3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC221E-DIR-F60(120)-IN",
-    des: "1.3mp BulletMP WDR Network IR Bullet Camera, ONVIF Conformance",
-  },
-  {
-    id: "1.3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC221ER-DF36",
-    des: "Smart IR technology, Day/night functionality, 9:16 corridor mode",
-  },
-  {
-    id: "1.3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2121SR3-PF36(60)(120)",
-    des: "Smart IR , up to 30 m (98 ft) IR distance",
-  },
-  {
-    id: "1.3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC221E-DIR-F60(120)-IN",
-    des: "1.3mp BulletMP WDR Network IR Bullet Camera, ONVIF Conformance",
-  },
-  {
-    id: "1.3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC221ER-DF36",
-    des: "Smart IR technology, Day/night functionality, 9:16 corridor mode",
-  },
+    name: "/NetworkingCameras",
+    subCams: ["PTZ", "BOX", "BULLET", "DOME"],
+    cams: [
+      {
+        id: "1.3mp",
+        image: "Images/PTZ_1.png",
+        name: "ptz cameras",
+        des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
+        subId: "PTZ",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/PTZ_1.png",
+        name: "IPC6221ER-X30(P)",
+        des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
+        subId: "PTZ",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/PTZ_2.png",
+        name: "IPC6221LR-X20S(P)",
+        des: "Customized OSD, Smart IR, Upto 100 m, 1.3MP 20x IR Network PTZ Dome Camera",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_3.png",
+        name: "IPC312SR-DVPF28 (40)-C",
+        des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_2.png",
+        name: "IPC312SR-DVPF28 (40)-C",
+        des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_1.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_1.png",
+        name: "IPC312SR-DVPF28 (40)-C",
+        des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_2.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "2mp",
+        image: "Images/PTZ_3.png",
+        name: "IPC312SR-DVPF28 (40)-C",
+        des: "IR anti-reflection window to increase the infrared transmittanceCar-grade LEDs, brighter and",
+        subId: "PTZ",
+      },
+      {
+        id: "3mp",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "4k",
+        image: "Images/PTZ_3.png",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "4k",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "4k",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "4k",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "4k",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      {
+        id: "4k",
+        image: "Images/PTZ_3.png",
+        name: "IPC6252SR-X33U-E",
+        des: "IR anti-reflection window to increase the infrared transmittance",
+        subId: "PTZ",
+      },
+      //   bullet
 
-  {
-    id: "2mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2122SR4-DPF36 (60)-C",
-    des: "Optical glass window with higher light transmittance",
-  },
-  {
-    id: "2mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2322EBR6-DPZ27-C",
-    des: "Up to 120 dB Optical WDR(Wide Dynamic Range)",
-  },
-  {
-    id: "2mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2122SR3-UPF40(60)",
-    des: "2MP Starlight Network IR Mini Bullet Camera",
-  },
-  {
-    id: "2mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2122SR3-UPF40(60)-C",
-    des: "2MP Starlight Network IR Mini Bullet Camera",
-  },
-  {
-    id: "2mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2222SR5-UPF40(60)-B",
-    des: "2MP Starlight Fixed Bullet Network Camera",
-  },
-  {
-    id: "2mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2122SR3-PF40(60)-B",
-    des: "2MP Mini Fixed Bullet Network Camera",
-  },
-  {
-    id: "3mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2123SR3-PF36(60)(120)",
-    des: "3MP Network IR Mini Bullet Camera with 9:16 corridor format, 3D DNR",
-  },
-  {
-    id: "4mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2224SR5-DPF40 (60)-C",
-    des: "Up to 120 dB Optical WDR(Wide Dynamic Range)",
-  },
-  {
-    id: "4mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2124SR3-DPF36(60)(120)",
-    des: "Triple streams, Day/night functionality, 4MP WDR Network IR Mini Bullet Camera",
-  },
-  {
-    id: "4mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2124SR3-DPF36(60)-16G",
-    des: "IR anti-reflection window to increase the infrared transmittance, H.265, H.264, MJPEG",
-  },
-  {
-    id: "4mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2224SR5-DPF40 (60)-C",
-    des: "Up to 120 dB Optical WDR(Wide Dynamic Range)",
-  },
-  {
-    id: "4mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2124SR3-DPF36(60)(120)",
-    des: "Triple streams, Day/night functionality, 4MP WDR Network IR Mini Bullet Camera",
-  },
-  {
-    id: "4mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2124SR3-DPF36(60)-16G",
-    des: "IR anti-reflection window to increase the infrared transmittance, H.265, H.264, MJPEG",
-  },
-  {
-    id: "5mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2125SR3ADUPF40(60)",
-    des: "Wide temperature range: -35°C to 60°C (-31°F to 140°F)",
-  },
-  {
-    id: "5mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2325EBR5-DUPZ",
-    des: "5MP WDR Starlight (Motorized) VF Network IR Bullet Camera",
-  },
-  {
-    id: "8mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC2328SBR5-DPZ",
-    des: "Smart IR, up to 50m (164 ft) IR distance",
-  },
-  {
-    id: "8mp Bullet",
-    image:
-      "https://www.univiewworld.in/Products/Network%20camera/Bullet/8mp/IPC2328SBR5-DPZ%20.PNG",
-    name: "IPC268ER9-DZ",
-    des: "4K WDR Ultra-HD Vari-focal Bullet Network Camera",
-  },
-  //   network
+      {
+        id: "1.3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2121SR3-PF36(60)(120)",
+        des: "Smart IR , up to 30 m (98 ft) IR distance",
+        subId: "BULLET",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC221E-DIR-F60(120)-IN",
+        des: "1.3mp BulletMP WDR Network IR Bullet Camera, ONVIF Conformance",
+        subId: "BULLET",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC221ER-DF36",
+        des: "Smart IR technology, Day/night functionality, 9:16 corridor mode",
+        subId: "BULLET",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2121SR3-PF36(60)(120)",
+        des: "Smart IR , up to 30 m (98 ft) IR distance",
+        subId: "BULLET",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC221E-DIR-F60(120)-IN",
+        des: "1.3mp BulletMP WDR Network IR Bullet Camera, ONVIF Conformance",
+        subId: "BULLET",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC221ER-DF36",
+        des: "Smart IR technology, Day/night functionality, 9:16 corridor mode",
+        subId: "BULLET",
+      },
 
-  {
-    id: "1.3mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/1.3MP/IPC541E-DLC.png",
-    name: "IPC541E-DLC",
-    des: "1.3MP WDR Low-light Network Box Camera",
-  },
-  {
-    id: "2mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/2MP/IPC542E-DLC.png",
-    name: "IPC542E-DLC",
-    des: "2MP WDR Low-light Network Box Camera, Lowlight surveillance",
-  },
-  {
-    id: "2mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/2MP/IPC542E-DLC.png",
-    name: "IPC542E-DUC",
-    des: "2MP WDR Starlight Network Box Camera, Upto 120dB WDR (Wide Dynamic Range)",
-  },
-  {
-    id: "2mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/2MP/IPC542E-DLC.png",
-    name: "IPC542E-DUG",
-    des: "2MP WDR Starlight Network Box Camera, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "2mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/2MP/IPC542E-DLC.png",
-    name: "IPC562E-DUG",
-    des: "2MP WDR Starlight Network Box Camera, 9:16 corridor format",
-  },
-  {
-    id: "2mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/2MP/IPC542E-DLC.png",
-    name: "IPC542E-DLC-C",
-    des: "AC 24V /DC 12 V/PoE power supply",
-  },
-  {
-    id: "4mp network",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Box-Cameras/2MP/IPC542E-DLC.png",
-    name: "IPC568E-G",
-    des: "4K Ultra-HD SFP Network Box Camera",
-  },
+      {
+        id: "2mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2122SR4-DPF36 (60)-C",
+        des: "Optical glass window with higher light transmittance",
+        subId: "BULLET",
+      },
+      {
+        id: "2mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2322EBR6-DPZ27-C",
+        des: "Up to 120 dB Optical WDR(Wide Dynamic Range)",
+        subId: "BULLET",
+      },
+      {
+        id: "2mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2122SR3-UPF40(60)",
+        des: "2MP Starlight Network IR Mini Bullet Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "2mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2122SR3-UPF40(60)-C",
+        des: "2MP Starlight Network IR Mini Bullet Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "2mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2222SR5-UPF40(60)-B",
+        des: "2MP Starlight Fixed Bullet Network Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "2mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2122SR3-PF40(60)-B",
+        des: "2MP Mini Fixed Bullet Network Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "3mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2123SR3-PF36(60)(120)",
+        des: "3MP Network IR Mini Bullet Camera with 9:16 corridor format, 3D DNR",
+        subId: "BULLET",
+      },
+      {
+        id: "4mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2224SR5-DPF40 (60)-C",
+        des: "Up to 120 dB Optical WDR(Wide Dynamic Range)",
+        subId: "BULLET",
+      },
+      {
+        id: "4mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2124SR3-DPF36(60)(120)",
+        des: "Triple streams, Day/night functionality, 4MP WDR Network IR Mini Bullet Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "4mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2124SR3-DPF36(60)-16G",
+        des: "IR anti-reflection window to increase the infrared transmittance, H.265, H.264, MJPEG",
+        subId: "BULLET",
+      },
+      {
+        id: "4mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2224SR5-DPF40 (60)-C",
+        des: "Up to 120 dB Optical WDR(Wide Dynamic Range)",
+        subId: "BULLET",
+      },
+      {
+        id: "4mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2124SR3-DPF36(60)(120)",
+        des: "Triple streams, Day/night functionality, 4MP WDR Network IR Mini Bullet Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "4mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2124SR3-DPF36(60)-16G",
+        des: "IR anti-reflection window to increase the infrared transmittance, H.265, H.264, MJPEG",
+        subId: "BULLET",
+      },
+      {
+        id: "5mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2125SR3ADUPF40(60)",
+        des: "Wide temperature range: -35°C to 60°C (-31°F to 140°F)",
+        subId: "BULLET",
+      },
+      {
+        id: "5mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2325EBR5-DUPZ",
+        des: "5MP WDR Starlight (Motorized) VF Network IR Bullet Camera",
+        subId: "BULLET",
+      },
+      {
+        id: "8mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC2328SBR5-DPZ",
+        des: "Smart IR, up to 50m (164 ft) IR distance",
+        subId: "BULLET",
+      },
+      {
+        id: "8mp",
+        image: "Images/Bullet_1 (4).png",
+        name: "IPC268ER9-DZ",
+        des: "4K WDR Ultra-HD Vari-focal Bullet Network Camera",
+        subId: "BULLET",
+      },
+      //   box
 
-  // dom
+      {
+        id: "1.3mp",
+        image: "Images/Box.png",
+        name: "IPC541E-DLC",
+        des: "1.3MP WDR Low-light Network Box Camera",
+        subId: "BOX",
+      },
+      {
+        id: "2mp",
+        image: "Images/Box.png",
+        name: "IPC542E-DLC",
+        des: "2MP WDR Low-light Network Box Camera, Lowlight surveillance",
+        subId: "BOX",
+      },
+      {
+        id: "2mp",
+        image: "Images/Box.png",
+        name: "IPC542E-DUC",
+        des: "2MP WDR Starlight Network Box Camera, Upto 120dB WDR (Wide Dynamic Range)",
+        subId: "BOX",
+      },
+      {
+        id: "2mp",
+        image: "Images/Box.png",
+        name: "IPC542E-DUG",
+        des: "2MP WDR Starlight Network Box Camera, 3D DNR (Digital Noise Reduction)",
+        subId: "BOX",
+      },
+      {
+        id: "2mp",
+        image: "Images/Box.png",
+        name: "IPC562E-DUG",
+        des: "2MP WDR Starlight Network Box Camera, 9:16 corridor format",
+        subId: "BOX",
+      },
+      {
+        id: "2mp",
+        image: "Images/Box.png",
+        name: "IPC542E-DLC-C",
+        des: "AC 24V /DC 12 V/PoE power supply",
+        subId: "BOX",
+      },
+      {
+        id: "4mp",
+        image: "Images/Box.png",
+        name: "IPC568E-G",
+        des: "4K Ultra-HD SFP Network Box Camera",
+        subId: "BOX",
+      },
 
-  {
-    id: "1.3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "Dom(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+      // dom
+
+      {
+        id: "1.3mp",
+        image: "Images/DOME (1).png",
+        name: "Dom(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(60)",
+        des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+        subId: "DOME",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(40)",
+        des: "3D noise reduction, 4 KV surge protection designed for network interface",
+        subId: "DOME",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC321SR3-VSPF28(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "1.3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "2mp",
+        image: "Images/DOME (1).png",
+        name: "2mp dom",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "2mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "2mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(60)",
+        des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+        subId: "DOME",
+      },
+      {
+        id: "2mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(40)",
+        des: "3D noise reduction, 4 KV surge protection designed for network interface",
+        subId: "DOME",
+      },
+      {
+        id: "2mp",
+        image: "Images/DOME (1).png",
+        name: "IPC321SR3-VSPF28(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "2mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "3mp",
+        image: "Images/DOME (1).png",
+        name: "3mp dom",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(60)",
+        des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+        subId: "DOME",
+      },
+      {
+        id: "3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(40)",
+        des: "3D noise reduction, 4 KV surge protection designed for network interface",
+        subId: "DOME",
+      },
+      {
+        id: "3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC321SR3-VSPF28(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "3mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "4mp",
+        image: "Images/DOME (1).png",
+        name: "4mp Dom---(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "4mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "4mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(60)",
+        des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+        subId: "DOME",
+      },
+      {
+        id: "4mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(40)",
+        des: "3D noise reduction, 4 KV surge protection designed for network interface",
+        subId: "DOME",
+      },
+      {
+        id: "4mp",
+        image: "Images/DOME (1).png",
+        name: "IPC321SR3-VSPF28(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "4mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "5mp",
+        image: "Images/DOME (1).png",
+        name: "5mp Dom",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "5mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "5mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(60)",
+        des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+        subId: "DOME",
+      },
+      {
+        id: "5mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(40)",
+        des: "3D noise reduction, 4 KV surge protection designed for network interface",
+        subId: "DOME",
+      },
+      {
+        id: "5mp",
+        image: "Images/DOME (1).png",
+        name: "IPC321SR3-VSPF28(40)(60)",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "5mp",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "fisheye",
+        image: "Images/DOME (1).png",
+        name: "fisheye",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "fisheye",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+      {
+        id: "fisheye",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(60)",
+        des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+        subId: "DOME",
+      },
+      {
+        id: "fisheye",
+        image: "Images/DOME (1).png",
+        name: "IPC3611ER3-PF28(36)(40)",
+        des: "3D noise reduction, 4 KV surge protection designed for network interface",
+        subId: "DOME",
+      },
+      {
+        id: "fisheye",
+        image: "Images/DOME (1).png",
+        name: "Fisheye",
+        des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+        subId: "DOME",
+      },
+      {
+        id: "fisheye",
+        image: "Images/DOME (1).png",
+        name: "IPC3231ER-DV(VS)",
+        des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+        subId: "DOME",
+      },
+    ],
   },
   {
-    id: "1.3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+    name: "/NetworkingVideos",
+    subCams: [],
+    cams: [
+      // 1-sata
+      {
+        id: "1-sata",
+        image: "Images/NVR.png",
+        name: "NVR101S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "1-sata",
+      },
+      {
+        id: "1-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "1-sata",
+      },
+      {
+        id: "1-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "1-sata",
+      },
+      {
+        id: "1-sata",
+        image: "Images/NVR.png",
+        name: "NVR201-04LP",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "1-sata",
+      },
+      //   2-sata
+      {
+        id: "2-sata",
+        image: "Images/NVR.png",
+        name: "NVR101S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "2-sata",
+      },
+      {
+        id: "2-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "2-sata",
+      },
+      {
+        id: "2-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "2-sata",
+      },
+      {
+        id: "2-sata",
+        image: "Images/NVR.png",
+        name: "NVR201-04LP",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "2-sata",
+      },
+      // 4-sata
+      {
+        id: "4-sata",
+        image: "Images/NVR.png",
+        name: "NVR101S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "4-sata",
+      },
+      {
+        id: "4-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "4-sata",
+      },
+      {
+        id: "4-sata",
+        image: "Images/NVR.png",
+        name: "NVR101S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "4-sata",
+      },
+      {
+        id: "4-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "4-sata",
+      },
+      {
+        id: "4-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "4-sata",
+      },
+      {
+        id: "4-sata",
+        image: "Images/NVR.png",
+        name: "NVR201-04LP",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "4-sata",
+      },
+      //   8-sata
+      {
+        id: "8-sata",
+        image: "Images/NVR.png",
+        name: "NVR101S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "8-sata",
+      },
+      {
+        id: "8-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "8-sata",
+      },
+      {
+        id: "8-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "8-sata",
+      },
+      {
+        id: "8-sata",
+        image: "Images/NVR.png",
+        name: "NVR201-04LP",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "8-sata",
+      },
+      {
+        id: "8-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "8-sata",
+      },
+      {
+        id: "8-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "8-sata",
+      },
+      //   16-sata
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR101S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR201-04LP",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-P",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR301-S",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+      {
+        id: "16-sata",
+        image: "Images/NVR.png",
+        name: "NVR201-04LP",
+        des: "4-channel input, 1 SATA HDD up to 6 TB, Up to 4 Megapixels resolution recording",
+        subId: "16-sata",
+      },
+    ],
   },
   {
-    id: "1.3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(60)",
-    des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
+    name: "/HDAnalog",
+    subCams: [],
+    cams: [
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2211F-VF",
+        des: "2MP HD Hybrid Camera, 72 High Sensitive LEDs, 2.8~12mm 2-Mega Manual Lens",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2211T-PF36",
+        des: "1MP 720P HD Sensor, 12 IR High Sensitive Led, Built-in IR cut, Low Power Consumption",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2211T-PF60",
+        des: "2 Super Power Array Leds, 1MP 720P HD Sensor, 6mm 2mega Fixed Lens",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2211T-PF80",
+        des: "Built IR Cut, Low Power Cunsumption, Support TVI and CVBS Hybrid Output",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2211T-PF120",
+        des: "12 IR High Sensitive Leds, 12mm 2mega Fixed Lens, 1MP 720P HD Sensor",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2211T-VF",
+        des: "Support TVI and CVBS Hybrid Output, 2.8-12mm 2mega Manual Lens",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2212-PF36 ",
+        des: "2MP Hybrid Camera, 24 IR High Sensitive Leds, 3.6mm 2mega fixed lens",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2212-PF60",
+        des: "36 IR High Sensitive Leds, Built IR Cut, Low Power Cunsumption",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2212-PF80",
+        des: "8mm 2mega fixed lens, 2 Super Power Array Leds, 2MP HD Hybrid Camera",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA2212T-PF36P",
+        des: "Support TVI AHD CVI and CVBS Hybrid Output, 12 IR High Sensitive Leds",
+        subId: "HDAnalog",
+      },
+      {
+        id: "All",
+        image: "Images/Bullet_1 (4).png",
+        name: "ANA3611T-PF28-36",
+        des: "1MP 720P HD Sensor, 2.8mm 2mega Fixed Lens, Built-in IR Cut",
+        subId: "HDAnalog",
+      },
+    ],
   },
   {
-    id: "1.3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(40)",
-    des: "3D noise reduction, 4 KV surge protection designed for network interface",
+    name: "/HDdvrs",
+    subCams: [],
+    cams: [
+      {
+        id: "All",
+        image: "Images/NVR.png",
+        name: "DVR201-04T",
+        des: "Cloud Storage, P2P Functions, Support Dropbox and Google Drive",
+        subId: "HDdvr",
+      },
+      {
+        id: "All",
+        image: "Images/NVR.png",
+        name: "DVR201-08T",
+        des: "8CH BNC Upto AHD / TVI / 1080P / IP, H.264 (High Profile @ Level 14.2) Video Compression",
+        subId: "HDdvr",
+      },
+      {
+        id: "All",
+        image: "Images/NVR.png",
+        name: "DVR202-16T",
+        des: "Recording & Emails Trigger Events, USB, HDD & Network Backup, Dual Streams",
+        subId: "HDdvr",
+      },
+      {
+        id: "All",
+        image: "Images/NVR.png",
+        name: "XVR301-04T",
+        des: "Recording & Emails Trigger Events, USB, HDD & Network Backup, Dual Streams",
+        subId: "HDdvr",
+      },
+      {
+        id: "All",
+        image: "Images/NVR.png",
+        name: "XVR301-08T",
+        des: "Recording & Emails Trigger Events, USB, HDD & Network Backup, Dual Streams",
+        subId: "HDdvr",
+      },
+    ],
   },
   {
-    id: "1.3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC321SR3-VSPF28(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+    name: "/NetworkStorage",
+    subCams: [],
+    cams: [
+      {
+        id: "All-Disk",
+        image: "Images/Trinai Server.png",
+        name: "DE1816",
+        des: "Intelligent RAID Engine (ISET), Super Error Correction (SEC), Data Protection & More",
+        subId: "Server",
+      },
+      {
+        id: "All-Disk",
+        image: "Images/Trinai Server.png",
+        name: "DEU1008-IN",
+        des: "8 SATA Interfaces, Power protection, High density, Multistagefan speed and energy saving",
+        subId: "Server",
+      },
+      {
+        id: "All-Disk",
+        image: "Images/Trinai Server.png",
+        name: "DEU1016-IN",
+        des: "16 SATA Interfaces, Upto 6TB for each disk, 1 Mini SAS, Redundant power supplies",
+        subId: "Server",
+      },
+      {
+        id: "All-Disk",
+        image: "Images/Trinai Server.png",
+        name: "DEU1124-IN",
+        des: "24 SATA Interfaces, 2TB, 3TB, 4TB SATA Disk, 2TB, 3TB, 4TB NL 7200RPM SAS Disk",
+        subId: "Server",
+      },
+    ],
   },
   {
-    id: "1.3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+    name: "/Codec",
+    subCams: [],
+    cams: [
+      {
+        id: "Encoders",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Encoder/DVS4104.png",
+        name: "VS4104",
+        des: "4 channel video and audio inputs, Full channel 960H realtime encoding",
+        subId: "Encoders",
+      },
+      {
+        id: "Encoders",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Encoder/DVS4116.png",
+        name: "DVS4116",
+        des: "16 channel video and audio inputs, H.264 video compression, Dual stream Encoder",
+        subId: "Encoders",
+      },
+      //   Decoders
+      {
+        id: "Decoders",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC4304-IN.png",
+        name: "DC4304-IN",
+        des: "4-Ch HD Video Decoder, 1/3/4/7/9/16 display split, HDMI and VGA Video input",
+        subId: "Decoders",
+      },
+      {
+        id: "Decoders",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC4308-IN.png",
+        name: "DC4308-IN",
+        des: "ONVIF conformance stream decoding, 1/4/9/16 display split, H.264 compression",
+        subId: "Decoders",
+      },
+      {
+        id: "Decoders",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC5301.png",
+        name: "DC5301",
+        des: "Decode video stream at of 12MP, 8MP, 6MP, 5MP, 4MP, 3MP, 1080P, 960P, 720P, D1, CIF",
+        subId: "Decoders",
+      },
+    ],
   },
   {
-    id: "2mp Dom ",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "2mp dom",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
+    name: "/Accessories",
+    subCams: ["Bracket", "Housing", "Lens"],
+    cams: [
+      {
+        id: "Bullet&Dom",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Box-Bullet/TR-UM06-A-IN.png",
+        name: "TR-UM06-A-IN",
+        des: "Pendant or wall installation for bullet camera mount",
+        subId: "Bracket",
+      },
+      {
+        id: "Bullet&Dom",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Box-Bullet/TR-UP06-IN.png",
+        name: "TR-UP06-IN",
+        des: "Outdoor, pole or rail installation Pole Mount Adapter",
+        subId: "Bracket",
+      },
+      //   Box cameras
+      {
+        id: "Box Camera",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Box-Camera/TR-SM06-IN.png",
+        name: "TR-SM06-IN",
+        des: "Box Camera L-form Mount corridor mode installation",
+        subId: "Bracket",
+      },
+      {
+        id: "Box Camera",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Box-Camera/TR-UM06-IN.png",
+        name: "TR-UM06-IN",
+        des: "Indoor, box camera pendant or wall installation",
+        subId: "Bracket",
+      },
+      //   Bullet cameras
+      {
+        id: "Bullet cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Bullet-Camera/TR-JB07-IN.png",
+        name: "TR-JB07-IN",
+        des: "7-Inch Junction Box, Outdoor or indoor cable junction box for IPC2XX & IPC32X series",
+        subId: "Bracket",
+      },
+      {
+        id: "Bullet cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Bullet-Camera/TR-UP06-A-IN.png",
+        name: "TR-UP06-A-IN",
+        des: "Outdoor, pole or rail installation for bullet camera of IPC22X & IPC24X series",
+        subId: "Bracket",
+      },
+      {
+        id: "Bullet cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Bullet-Camera/TR-WM06-C-IN.png",
+        name: "TR-WM06-C-IN",
+        des: "Wall installation for Bullet Cameras",
+        subId: "Bracket",
+      },
+      //   Dome Camears
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-FM152-A-IN.png",
+        name: "TR-FM152-A-IN",
+        des: "Indoor, indoor fixed dome in-ceiling installation",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-FM152-IN.png",
+        name: "TR-FM152-IN",
+        des: "Indoor, indoor fixed dome in-ceiling installation",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-JB03-A-IN.png",
+        name: "TR-JB03-A-IN",
+        des: "3-inch Fixed Dome Junction Box Wall installation for IPC36 Series fixed dome",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-JB03-IN.png",
+        name: "TR-JB03-IN",
+        des: "3-Inch Fixed Dome Wall installation for IPC32 Series fixed dome cameras",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-JB04-A-IN.png",
+        name: "TR-JB04-A-IN",
+        des: "4-Inch Fixed Dome Junction Box Wall installation for IPC34 Series fixed dome",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-JB04-IN.png",
+        name: "TR-JB04-IN",
+        des: "4-Inch Wall installation for IPC323 Series fixed dome Junction Box",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-JB07&WM03-IN.png",
+        name: "TR-JB07&WM03-IN",
+        des: "3-Inch Wall Mount Outdoor, wall installation for fixed dome",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-JB07&WM04-IN.png",
+        name: "TR-JB07&WM04-IN",
+        des: "Outdoor, wall installation for 4-inch fixed dome",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-SM04-IN.png",
+        name: "TR-SM04-IN",
+        des: "4-Inch Indoor, Electric-box Transfer plate for IPC323 Series Fixed Dome",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-UF45-D-IN.png",
+        name: "TR-UF45-D-IN",
+        des: "Wall or pendant installation for Fixed Dome Plate Mount",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-UF45-E-IN.png  ",
+        name: "TR-UF45-E-IN",
+        des: "Fixed Dome Plate Mount Indoor, wall or pendant installation for IPC323 series",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-UF45-IN.png",
+        name: "TR-UF45-IN",
+        des: "Fixed Dome Plaate Mount Indoor, wall or pendant installation for IPC34X series",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-UM06-B-IN.png",
+        name: "TR-UM06-B-IN",
+        des: "3-Inch Indoor, incline installation for 3-inch fixed dome Incline Mount",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-WM03-IN.png",
+        name: "TR-WM03-IN",
+        des: "3-Inch Indoor, wall installation for 3-inch fixed dome cameras",
+        subId: "Bracket",
+      },
+      {
+        id: "Dome cameras",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Dome-Camera/TR-WM04-IN.png",
+        name: "TR-WM04-IN",
+        des: "4-Inch Indoor, wall installation for 4-inch fixed dome cameras",
+        subId: "Bracket",
+      },
+      {
+        id: "House Bracket",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Housing-Bracket/TR-CM06-IN.png",
+        name: "TR-CM06-IN",
+        des: "Indoor or outdoor, housing Pendant installation",
+        subId: "Bracket",
+      },
+      {
+        id: "House Bracket",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Housing-Bracket/TR-UV06-A-IN.png",
+        name: "TR-UV06-A-IN ",
+        des: "Outdoor, pole or rail installation for housing",
+        subId: "Bracket",
+      },
+      {
+        id: "House Bracket",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Housing-Bracket/TR-UV06-IN.png",
+        name: "TR-UV06-IN",
+        des: "Outdoor, pole or rail installation for housing",
+        subId: "Bracket",
+      },
+      {
+        id: "House Bracket",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Housing-Bracket/TR-WM06-A-IN.png",
+        name: "TR-WM06-A-IN",
+        des: "Indoor, wall installation for box camera housing",
+        subId: "Bracket",
+      },
+      {
+        id: "House Bracket",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/Housing-Bracket/TR-WM06-B-IN.png",
+        name: "TR-WM06-B-IN",
+        des: "Outdoor, wall installation for box camera housing",
+        subId: "Bracket",
+      },
+      //   Ptz dome cameras
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-CE45-IN.png",
+        name: "TR-CE45-IN",
+        des: "Indoor or outdoor, PTZ Dome Pendant installation",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-FM200-IN.png ",
+        name: "TR-FM200-IN",
+        des: "Indoor, indoor PTZ dome in-ceiling installation",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-JB12-IN.png",
+        name: "TR-JB12-IN",
+        des: "12-Inch Outdoor or indoor cable junction box for PTZ Dome series",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-SE45-A-IN.png ",
+        name: "TR-SE45-A-IN",
+        des: "Indoor or outdoor, PTZ dome pendant installation (500mm)",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-SE45-IN.png",
+        name: "TR-SE45-IN",
+        des: "Indoor or outdoor, PTZ dome pendant installation (200mm)",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UC08-A-IN.png",
+        name: "TR-UC08-A-IN",
+        des: "Indoor or outdoor, PTZ Dome Corner installation",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UC08-B-IN.png",
+        name: "TR-UC08-B-IN",
+        des: "Indoor or outdoor, PTZ Dome Corner installation",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UF45-A-IN.png",
+        name: "TR-UF45-A-IN",
+        des: "Indoor, PTZ dome pendant installation",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UF45-B-IN.png",
+        name: "TR-UF45-B-IN",
+        des: "Outdoor, PTZ dome pendant installation",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UF45-C-IN.png",
+        name: "TR-UF45-C-IN",
+        des: "Indoor, wall or pendant installation for indoor PTZ dome",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UP08-A-IN.png",
+        name: "TR-UP08-A-IN",
+        des: "Indoor or outdoor, pole installation for PTZ dome camera",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-UP08-B-IN.png",
+        name: "TR-UP08-B-IN",
+        des: "Indoor or outdoor, pole installation for PTZ dome camera",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-WE45-A-IN.png",
+        name: "TR-WE45-A-IN",
+        des: "Indoor or outdoor, wall mount for PTZ dome camera",
+        subId: "Bracket",
+      },
+      {
+        id: "PTZ Dome",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Bracket/PTZ-Dome/TR-WE45-IN.png",
+        name: "TR-WE45-IN",
+        des: "Indoor or outdoor, wall installation for PTZ dome camera",
+        subId: "Bracket",
+      },
+      // Housing
+      {
+        id: "Housing",
+        image: "Images/1 (1).png",
+        name: "HS-108-IN ",
+        des: "Anti-corrosive aluminum alloy with solidity and durability, Easy and flexible",
+        subId: "Housing",
+      },
+      {
+        id: "Housing",
+        image: "Images/1 (2).png",
+        name: "TR-CE45-IN",
+        des: "Indoor or outdoor, PTZ Dome Pendant installation",
+        subId: "Housing",
+      },
+      {
+        id: "Housing",
+        image: "Images/1 (3).png",
+        name: "TR-FM200-IN",
+        des: "Indoor, indoor PTZ dome in-ceiling installation",
+        subId: "Housing",
+      },
+
+      // lens{
+      {
+        id: "Lens",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Lens/LENS-CM1140P-10M-IN.png",
+        name: "LENS-CM1140P-10M-IN",
+        des: " 11~40mm Focal Length, F1.5, P-Iris",
+        subId: "Lens",
+      },
+      {
+        id: "Lens",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Lens/LENS-DM1140P-5M-IN.png",
+        name: "LENS-DM1140P-5M-IN",
+        des: "C Mount Lens, 1/1.8 Format",
+        subId: "Lens",
+      },
+      {
+        id: "Lens",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Lens/LENS-DM3816D-3M-IN.png",
+        name: "LENS-DM3816D-3M-IN",
+        des: "3.8~16mm Focal Length, F1.6, DC auto-Iris",
+        subId: "Lens",
+      },
+      {
+        id: "Lens",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Lens/LENS-YM0312D-3M-IN.png",
+        name: "LENS-YM0312D-3M-IN",
+        des: "3~12mm Focal Length, CS Lens Mount",
+        subId: "Lens",
+      },
+      {
+        id: "Lens",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Lens/LENS-YM0722D-3M-IN.png",
+        name: "LENS-YM0722D-3M-IN",
+        des: "7~22mm Focal Length, F1.6, DC auto Iris",
+        subId: "Lens",
+      },
+      {
+        id: "Lens",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Accessories/Lens/LENS-YM0860D-3M-IN.png",
+        name: "LENS-YM0860D-3M-IN",
+        des: "8~60mm Focal Length, F1.8, DC auto-Iris, CS Lens Mount",
+        subId: "Lens",
+      },
+    ],
   },
   {
-    id: "2mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "2mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(60)",
-    des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
-  },
-  {
-    id: "2mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(40)",
-    des: "3D noise reduction, 4 KV surge protection designed for network interface",
-  },
-  {
-    id: "2mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC321SR3-VSPF28(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "2mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "3mp dom",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(60)",
-    des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
-  },
-  {
-    id: "3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(40)",
-    des: "3D noise reduction, 4 KV surge protection designed for network interface",
-  },
-  {
-    id: "3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC321SR3-VSPF28(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "3mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "4mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "4mp Dom---(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "4mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "4mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(60)",
-    des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
-  },
-  {
-    id: "4mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(40)",
-    des: "3D noise reduction, 4 KV surge protection designed for network interface",
-  },
-  {
-    id: "4mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC321SR3-VSPF28(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "4mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "5mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "5mp Dom",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "5mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "5mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(60)",
-    des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
-  },
-  {
-    id: "5mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(40)",
-    des: "3D noise reduction, 4 KV surge protection designed for network interface",
-  },
-  {
-    id: "5mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC321SR3-VSPF28(40)(60)",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "5mp Dom",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "fisheye",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "fisheye",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "fisheye",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
-  },
-  {
-    id: "fisheye ",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(60)",
-    des: "IR anti-reflection window to increase the infrared transmittance, Up to 30m",
-  },
-  {
-    id: "fisheye",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3611ER3-PF28(36)(40)",
-    des: "3D noise reduction, 4 KV surge protection designed for network interface",
-  },
-  {
-    id: "fisheye",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "Fisheye",
-    des: "IK10 vandal resistant, IP66, 1.3MP Vandal-resistant Network IR Fixed Dome Camera",
-  },
-  {
-    id: "fisheye",
-    image:
-      "https://www.univiewworld.in/Products/Uniview-2016/Network-Cameras/Fixed-Dome-Cameras/1.3MP/IPC321SR3-VSPF28(40)(60).png",
-    name: "IPC3231ER-DV(VS)",
-    des: "Smart IR, up to 30 m (98 ft) IR distance, 3D DNR (Digital Noise Reduction)",
+    name: "/ClientSoftware",
+    subCams: ["Pc-Software", "Mobile-Software"],
+    cams: [
+      //mobile software
+      {
+        id: "mb-software",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Client-Software/Mobile-Client-Software/UNIVIEW-EZView-Mobile-Surveillance-Client.png",
+        name: "UNIVIEW-EZView-Mobile-Surveillance-Client",
+        des: "EZView Mobile Surveillance Client App",
+        subId: "Mobile-Software",
+      },
+      //pc software
+      {
+        id: "pc-software",
+        image:
+          "https://www.univiewworld.in/Products/Uniview-2016/Client-Software/PC-Client-Software/UNV-EZStation-v2.png",
+        name: "UNV-EZStation-v2",
+        des: "EZStation Video Management Software",
+        subId: "Pc-Software",
+      },
+    ],
   },
 ];

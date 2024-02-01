@@ -1,11 +1,12 @@
 import React from "react";
 import "./NewsFeed.css";
 import { Newsfeed } from "../Data/Newsfeed";
+import { Link } from "react-router-dom";
 export const NewsFeed = () => {
   return (
     <div className="news-head-container">
       <div className="news-img-div">
-        <h1 id="h2heading">News-Feed</h1>
+        {/* <h1 id="h2heading">News-Feed</h1> */}
       </div>
       <div className="news-middle-container">
         <div className="news-loop-method">
@@ -21,11 +22,23 @@ export const NewsFeed = () => {
 
               <div className="news-matter-div">
                 <h5 id="h5heading">{i.name}</h5>
-                <span style={{ height: "150px", overflow: "hidden" }}>
+                <span
+                  style={{
+                    height: "150px",
+                    overflow: "scroll",
+                  }}
+                >
                   {i.des}
                 </span>
-                <button className="btn1 ">Read more..</button>
               </div>
+              <button className="btn1 ">
+                <Link
+                  style={{ textDecoration: "none", color: "red" }}
+                  to="/Getdata"
+                >
+                  Read more..
+                </Link>
+              </button>
             </div>
           ))}
         </div>

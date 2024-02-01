@@ -1,4 +1,6 @@
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 import { Function } from "../Data/Function";
 import { General } from "../Data/General";
 import { Interface } from "../Data/Interface";
@@ -10,13 +12,39 @@ import { Vedio } from "../Data/Vedio";
 import "./Product.css";
 
 export const Product = () => {
-  const [Tabs, setTabs] = useState("0");
-  const setTab = (value) => {
-    setTabs(value);
+  const [Tabs, setTabs] = useState(1);
+  const scroll = useRef();
+
+  useEffect(() => {
+    scroll.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
+  const downloadPdf = async () => {
+    const capture = document.querySelector(".certificate__card");
+    const canvas = await html2canvas(capture);
+
+    const pdf = new jsPDF({
+      orientation: "portrait",
+      unit: "in",
+      format: [4, 3],
+    });
+
+    const imgData = canvas.toDataURL("image/png");
+    const width = pdf.internal.pageSize.getWidth();
+    const height = (canvas.height * width) / canvas.width;
+
+    pdf.addImage(imgData, "PNG", 0, 0, width, height);
+
+    // Additional logic for pagination if needed
+    // For simplicity, let's assume 2 pages for demo purposes
+    pdf.addPage(); // Add a new page
+    pdf.text("Page 2 Content", 10, 10); // Add content to the new page
+
+    pdf.save("trinay.pdf");
   };
 
   return (
-    <div>
+    <div className="certificate__card" ref={scroll}>
       <div className="pro-main-div">
         <div className="pro-details-list">
           <h2>HC-IPC-DQA4113-0280-DLS</h2>
@@ -39,7 +67,7 @@ export const Product = () => {
         <div className="pro-details-image">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="https://genieproducts.co.uk/app/uploads/2021/07/GAHD18IRPTZ-Web.png"
+            src="Images/ptz.png"
             alt=""
           />
         </div>
@@ -55,7 +83,7 @@ export const Product = () => {
                   color: "#32a8a2",
                   borderBottom: Tabs === 1 && "2px solid #32a8a2",
                 }}
-                onClick={() => setTab(1)}
+                onClick={() => setTabs(1)}
               >
                 Specification
               </h3>
@@ -66,7 +94,7 @@ export const Product = () => {
                   borderBottom: Tabs === 2 && "2px solid #32a8a2",
                   marginLeft: "20px",
                 }}
-                onClick={() => setTab(2)}
+                onClick={() => setTabs(2)}
               >
                 Download
               </h3>
@@ -132,7 +160,7 @@ export const Product = () => {
               </div>
             </div>
             <div>
-              <h4 style={{ color: "#32a8a2" }}>Stroage</h4>
+              <h4 style={{ color: "#32a8a2" }}>Storage</h4>
               <hr />
               <div>
                 {Storage.map((i) => (
@@ -246,6 +274,7 @@ export const Product = () => {
               <span style={{ width: "20%" }}>960.71 KB</span>
               <span style={{ width: "20%" }}>pdf</span>
               <button
+                onClick={downloadPdf}
                 style={{
                   width: "100px",
                   backgroundColor: "#32a8a2",
@@ -260,6 +289,7 @@ export const Product = () => {
           </div>
         </div>
       </div>
+      {/* <button>Download</button> */}
     </div>
   );
 };

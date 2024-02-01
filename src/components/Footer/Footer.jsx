@@ -7,8 +7,8 @@ export const Footer = () => {
     <div className="footer-full">
       <div className="footer-img-logo">
         <img
-          style={{ width: "150px", height: "100px" }}
-          src="Images/trinai.png"
+          style={{ width: "100%", height: "100%" }}
+          src="Images/trinai white.png"
           alt=""
         />
       </div>
