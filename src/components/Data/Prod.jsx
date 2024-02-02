@@ -29,7 +29,7 @@ export const ProductItems = [
     right: "1/2s ~ 1 /100000s",
   },
   {
-    left: "Min.Illumination",
+    left: "Min.    Illumination",
     right: "Color: 0.005 Lux@ F1.6, AGC ON; 0 Lux with IR",
   },
   {

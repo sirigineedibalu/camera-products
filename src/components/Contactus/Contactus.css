@@ -45,3 +45,30 @@
   /* padding: 10px; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+@media (max-width: 768px) {
+  .contact-us-container {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  }
+  .Contact-us-maps-location {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100%;
+    /* padding: 10px; */
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}

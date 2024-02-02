@@ -77,3 +77,28 @@
   color: #333;
   text-decoration: none;
 }
+.header-hamb-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header--listitems-con,
+  .header-search-main {
+    display: none;
+    flex-direction: column;
+  }
+  .header-hamb-icon {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    z-index: 999;
+  }
+  .header-hamb-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    z-index: 999;
+    margin-top: 100px;
+    background-color: #fff;
+  }
+}

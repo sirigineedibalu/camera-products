@@ -35,10 +35,8 @@ export const Product = () => {
 
     pdf.addImage(imgData, "PNG", 0, 0, width, height);
 
-    // Additional logic for pagination if needed
-    // For simplicity, let's assume 2 pages for demo purposes
-    pdf.addPage(); // Add a new page
-    pdf.text("Page 2 Content", 10, 10); // Add content to the new page
+    pdf.addPage();
+    pdf.text("Page 2 Content", 10, 10);
 
     pdf.save("trinay.pdf");
   };
@@ -166,7 +164,7 @@ export const Product = () => {
                 {Storage.map((i) => (
                   <div>
                     <div className="pro-pre-list__items">
-                      <div style={{ width: "20%" }}>
+                      <div style={{ width: "20%", display: "flex" }}>
                         <span>{i.left}</span>
                       </div>
                       <div style={{ width: "80%" }}>

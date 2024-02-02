@@ -1,20 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdOutlineCancel } from "react-icons/md";
 
 export const Header = () => {
   const [isProductsDropdownVisible, setProductsDropdownVisibility] =
     useState(false);
+  // const [isvisible, setIsVisible] = useState(false);
+  let [visible, setVisible] = useState(false);
 
   const handleProductsMouseEnter = () => {
     setProductsDropdownVisibility(true);
   };
-
   const handleProductsMouseLeave = () => {
     setProductsDropdownVisibility(false);
   };
+  const handleDisplay = () => {
+    setVisible(true);
+  };
+  const handleNotDisplay = () => {
+    setVisible(false);
+    console.log(visible + "---->after click");
+  };
+
+  // const display = () => {
+  //   const value1 = document.getElementById("display");
+  //   // document.value1.style.display = "block";
+  //   console.log(value1);
+  // };
 
   return (
     <div>
@@ -29,7 +45,7 @@ export const Header = () => {
           </Link>
         </div>
         <div className="header-sublist-container">
-          <div className="header--listitems-con">
+          <div id="display" className="header--listitems-con">
             <Link
               style={{ textDecoration: "none", color: "black" }}
               to="/Aboutus"
@@ -177,6 +193,7 @@ export const Header = () => {
               </Link>
             </span>
           </div>
+
           <div className="header-search-main">
             <input
               className="header-search-item"
@@ -185,6 +202,29 @@ export const Header = () => {
             />
             <FaSearch />
           </div>
+        </div>
+        <div
+          className="header-hamb-icon"
+          onClick={handleDisplay}
+          // onMouseLeave={handleNotDisplay}
+        >
+          <span>
+            <RxHamburgerMenu />
+          </span>
+          {visible && (
+            <div className="header-hamb-content">
+              <span style={{ border: "1px solid red" }}>
+                <MdOutlineCancel size={22} onClick={handleNotDisplay} />
+              </span>
+              <span>About</span>
+              <span>Products</span>
+              <span>Solution</span>
+              <span>News&Events</span>
+              <span>Support</span>
+              <span>My Account</span>
+              <span>Contact Us</span>
+            </div>
+          )}
         </div>
       </div>
     </div>

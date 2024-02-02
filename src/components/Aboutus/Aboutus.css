@@ -1,9 +1,9 @@
 .aboutus-image-container {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   /* border: 1px solid red; */
-  background-image: url("D:\projects\trinai\public\Images\about us.jpg");
-  background-size: cover;
+  /* background-image: url("D:\projects\trinai\public\Images\about us.jpg");
+  background-size: cover; */
   position: relative;
 }
 #Aboutus {
@@ -18,7 +18,6 @@
 .aboutus-midd-img {
   width: 100%;
   height: 70vh;
-
   /* border: 1px solid red; */
 }
 .about-side-midd {
@@ -44,8 +43,18 @@
   gap: 1rem;
 }
 #headingcolor {
-  color: rgb(67, 195, 238);
+  color: #1703fc;
 }
 .span {
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .aboutus-image-container {
+    width: 100%;
+    height: 50vh;
+  }
+  .aboutus-midd-img {
+    width: 100%;
+    height: 50vh;
+  }
 }

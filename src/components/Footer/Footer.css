@@ -5,14 +5,10 @@
   align-items: center;
   line-height: 50px;
   width: 100%;
-  height: 50vh;
+  height: 70%;
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.822);
-  /* background-image: url("https://www.hifocuscctv.com/templates/hifocus/images/bg/blue.png");
-  background-size: cover; */
   background-color: rgba(0, 0, 0, 0.836);
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   */
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 10px;
@@ -29,8 +25,9 @@
 .footer-total-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 80%;
+  padding: 20px;
   margin-top: 20px;
 }
 
@@ -53,14 +50,17 @@
   flex-direction: column;
   margin-left: 12px;
 }
-/* .footer-total-container h4:nth-child(1):hover {
-  color: orange;
-} */
+
 .footer-span-product > span:hover {
   color: rgb(30, 173, 209);
 }
 .footer-span-product1 > span:hover {
   color: rgb(30, 173, 209);
+}
+.footer-side-div-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .footer-information-con {
   width: 350px;
@@ -75,7 +75,6 @@
 .footer-contactus {
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif !important;
 }
 .footer-contact-info {
   width: 350px;
@@ -94,4 +93,61 @@
 }
 h4 {
   color: #fff;
+}
+.footer-contat-End--container {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .footer-full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 50px; */
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(0, 0, 0, 0.836);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 10px;
+  }
+  .footer-product-con {
+    display: none;
+  }
+  .footer-span-product {
+    display: none;
+  }
+  .footer-span-product1 {
+    display: none;
+  }
+  .footer-information-con {
+    display: none;
+  }
+  .footer-toooo-coo {
+    display: none;
+  }
+  .footer-contactus {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-contactus > h2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer-contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* border: 1px solid red; */
+  }
+  .footer-contat-End--container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid red; */
+  }
 }

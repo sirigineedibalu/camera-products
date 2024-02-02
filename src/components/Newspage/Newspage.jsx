@@ -4,7 +4,11 @@ export const Newspage = () => {
   return (
     <div>
       <div className="np-img-container">
-        <h2 id="pgheading">News-Page</h2>
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src="Images/Sliders/news feed.jpg"
+          alt=""
+        />
       </div>
       <div className="pg-heaader-div">
         <div className="pg-hero-container">
@@ -47,7 +51,7 @@ export const Newspage = () => {
           </div>
         </div>
         <div className="np-middle-container">
-          <h4>Accommodation</h4>
+          <h4 id="nph4heading">Accommodation</h4>
           <span>
             Accessibility is one of the biggest problems that most security
             cameras installation companies face.
@@ -60,7 +64,7 @@ export const Newspage = () => {
             easy and can be quickly moved when need be, something which a wired
             one can not do.
           </span>
-          <h4>Portability</h4>
+          <h4 id="nph4heading">Portability</h4>
           <span>
             Looking For Security Cameras has a lot of advantages.The fact that
             cameras are highly portable gives it one of the biggest advantages.

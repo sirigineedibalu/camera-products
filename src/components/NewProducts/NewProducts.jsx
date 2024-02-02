@@ -39,23 +39,30 @@ export const NewProducts = () => {
 
   return (
     <div className="new__product__main__card">
-      <h2>NEW PRODUCTS</h2>
+      <h1>
+        <b>NEW PRODUCTS</b>
+      </h1>
       <div id="parent" className="newprod-container">
         {Products.map((i) => (
           <div className="new-main-imgcon">
             <div className="new-img-conta">
-              <Link to="/productDetails">
-                <img
-                  style={{
-                    width: "100%",
-                    height: "70%",
-                  }}
-                  src={i.image}
-                  alt=""
-                />
-              </Link>{" "}
-              <span style={{ color: "blue" }}>{i.name}</span>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+                src={i.image}
+                alt=""
+              />
             </div>
+            <Link
+              style={{ color: "blue", textDecoration: "none" }}
+              to="/productDetails"
+            >
+              <div>
+                <span>{i.name}</span>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

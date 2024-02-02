@@ -1,7 +1,6 @@
 .new__product__main__card {
   width: 100%;
   padding: 20px;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -10,30 +9,24 @@
 .newprod-container {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   width: 100%;
   gap: 3rem;
-
   padding: 30px;
   overflow-x: hidden;
 }
-/* .new__pro__cot {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-  overflow-x: auto;
-  z-index: 999;
-} */
 
 .new-main-imgcon {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-
-  /* border: 1px solid red; */
+  align-items: center;
+  padding: 10px;
+  gap: 1rem;
+  width: 350px;
+  height: 300px;
+  border-radius: 30px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid rgba(172, 166, 166, 0.349);
 }
 
 .new-main-imgcon:hover .new-img-conta {
@@ -42,16 +35,44 @@
 
 .new-img-conta {
   width: 250px;
-  /* height: 350px; */
-  /* margin-left: 20px; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 200px;
+  padding: 10px;
 }
-#h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 70px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #000;
+@media (max-width: 768px) {
+  .new__product__main__card {
+    margin-top: 20px;
+  }
+
+  .newprod-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    /* gap: 5rem; */
+    padding: 10px;
+    overflow-x: hidden;
+    /* border: 1px solid green; */
+  }
+  .new-main-imgcon:hover .new-img-conta {
+    transform: rotate(5deg);
+  }
+  .new-img-conta {
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+  }
+  .new-main-imgcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+    width: 450px;
+    height: 300px;
+    border-radius: 30px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 1px solid rgba(172, 166, 166, 0.349);
+  }
 }

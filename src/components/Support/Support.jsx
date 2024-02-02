@@ -5,7 +5,11 @@ export const Support = () => {
   return (
     <div className="support-main-class">
       <div className="support-hero-container">
-        {/* <h1 id="h1support">Support</h1> */}
+        <img
+          width={{ width: "100%", height: "100%" }}
+          src="Images/Sliders/support.jpg"
+          alt=""
+        />
       </div>
       <div className="support-header-container">
         <div className="support-details-sec-div">

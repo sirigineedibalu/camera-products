@@ -49,3 +49,22 @@
   flex-direction: row;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .pro-main-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .pro-pre-list__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+  }
+}

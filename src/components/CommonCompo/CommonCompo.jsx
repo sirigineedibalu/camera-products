@@ -105,6 +105,9 @@ const CommonCompo = () => {
       <div className="sub__cams__card">
         {uniquesPixs?.map((each) => (
           <div
+            style={{
+              background: initialDisplay === each.id && "#02b8fa",
+            }}
             onClick={() => onFunctionPixChange(each)}
             className="single__cams__details"
           >
@@ -112,10 +115,11 @@ const CommonCompo = () => {
           </div>
         ))}
       </div>
+      <hr />
       <div className="main__all__cams__display__card">
         {newFilterSubCam?.map((each) => (
           <div className="main__cams__single__card">
-            <img src={each.image} alt="" />
+            <img style={{ width: "100%" }} src={each.image} alt="" />
             <h3>{each.name}</h3>
             <span>{each.des}</span>
             <Link to="/ProductDetails">

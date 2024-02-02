@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { FaPhone } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
+// import { IoIosArrowForward } from "react-icons/io";
 
 export const Footer = () => {
   return (
@@ -13,8 +14,11 @@ export const Footer = () => {
         />
       </div>
       <div className="footer-total-container">
-        <div>
-          <h4>Products</h4>
+        <div className="footer-toooo-coo">
+          <h2>
+            Products
+            {/* <IoIosArrowForward /> */}
+          </h2>
           <div className="footer-product-con">
             <div className="footer-span-product">
               <span>Analog HD Cameras</span>
@@ -32,31 +36,45 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer-information-con">
-          <h4>Informations</h4>
-          <div className="footer-span-con">
-            <span>About us</span>
-            <span>Solutions</span>
-            <span>News & Events</span>
-            <span>Support</span>
-            <span>Contact Us</span>
-            <span></span>
+        <div className="footer-side-div-container">
+          <div className="footer-information-con">
+            <h2>
+              {" "}
+              Informations
+              {/* <IoIosArrowForward /> */}
+            </h2>
+            <div className="footer-span-con">
+              <span>About us</span>
+              <span>Solutions</span>
+              <span>News & Events</span>
+              <span>Support</span>
+              <span>Contact Us</span>
+              <span></span>
+            </div>
           </div>
-        </div>
-        <div className="footer-contactus">
-          <h4>Contact Info</h4>
-          <div className="footer-contact-info">
-            <span>
-              <FaPhone size={22} style={{ marginRight: "12px" }} />
-              <b>Toll Free Number</b>
-            </span>
-            <span>0990916376374</span>
-            <span>
-              <TfiEmail size={22} style={{ marginRight: "12px" }} />
-              <b>Email</b>
-            </span>
-            <span>Brihaspathitechnologies.com</span>
-            <span>Trinai@brihaspathi.com</span>
+          <div className="footer-contactus">
+            <h2>
+              {" "}
+              Contact Info
+              {/* <IoIosArrowForward /> */}
+            </h2>
+            <div className="footer-contact-info">
+              <div className="footer-contat-End--container">
+                <span>
+                  <FaPhone size={22} style={{ marginRight: "12px" }} />
+                  <b>Toll Free Number</b>
+                </span>
+                <span>0990916376374</span>
+              </div>
+              <div className="footer-contat-End--container">
+                <h4>
+                  <TfiEmail size={22} style={{ marginRight: "12px" }} />
+                  <b>Email</b>
+                </h4>
+                <span>Brihaspathitechnologies.com</span>
+                <span>Trinai@brihaspathi.com</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

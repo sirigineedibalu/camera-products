@@ -5,7 +5,11 @@ export const Aboutus = () => {
   return (
     <div>
       <div className="aboutus-image-container">
-        {/* <h1 id="Aboutus">About us</h1> */}
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src="Images\about us.jpg"
+          alt=""
+        />
       </div>
       <div className="about-side-midd">
         <div className="about-div-con">
@@ -98,9 +102,9 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">PoE Switches</h5>
+            <h5 id="headingcolor">POE Switches</h5>
             <span>
-              Our PoE switches are a simple yet powerful solution for installing
+              Our POE switches are a simple yet powerful solution for installing
               networked video surveillance systems. Safety is always ensured
               when you useTrinai’s superior PoE switches for IP cameras. It
               comes with resilience to power failure, long runs and easy and low

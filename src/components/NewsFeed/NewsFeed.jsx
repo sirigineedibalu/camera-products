@@ -6,7 +6,11 @@ export const NewsFeed = () => {
   return (
     <div className="news-head-container">
       <div className="news-img-div">
-        {/* <h1 id="h2heading">News-Feed</h1> */}
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src="Images/Sliders/news feed.jpg"
+          alt=""
+        />
       </div>
       <div className="news-middle-container">
         <div className="news-loop-method">
@@ -14,7 +18,11 @@ export const NewsFeed = () => {
             <div className="news-main-dta">
               <div className="news-data-img">
                 <img
-                  style={{ width: "100%", height: "100%", borderRadius: "7px" }}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "5px 30px",
+                  }}
                   src={i.image}
                   alt=""
                 />

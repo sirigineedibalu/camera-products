@@ -25,3 +25,16 @@
   width: 150px;
   height: 55px;
 }
+@media (max-width: 768px) {
+  .mointor-main-img {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .monitor-back-page {
+    display: flex;
+    flex-direction: column;
+  }
+}

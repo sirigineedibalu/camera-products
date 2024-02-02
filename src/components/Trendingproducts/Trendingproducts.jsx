@@ -39,23 +39,30 @@ export const Trendingproducts = () => {
 
   return (
     <div className="trend__product__main__card">
-      <h1>Trending Products</h1>
+      <h1>
+        <b>Trending Products</b>
+      </h1>
       <div id="secondpare" className="trendprod-container">
         {Products.map((i) => (
           <div className="trend-main-imgcon">
             <div className="trend-img-conta">
-              <Link to="/productDetails">
-                <img
-                  style={{
-                    width: "100%",
-                    height: "70%",
-                  }}
-                  src={i.image}
-                  alt=""
-                />
-              </Link>{" "}
-              <span style={{ color: "blue" }}>{i.name}</span>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+                src={i.image}
+                alt=""
+              />
             </div>
+            <Link
+              style={{ color: "blue", textDecoration: "none" }}
+              to="/productDetails"
+            >
+              <div>
+                <span>{i.name}</span>
+              </div>
+            </Link>{" "}
           </div>
         ))}
       </div>
