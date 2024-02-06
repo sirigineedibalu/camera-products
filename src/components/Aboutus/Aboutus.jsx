@@ -16,7 +16,7 @@ export const Aboutus = () => {
           <div className="aboutus-midd-img">
             <img
               style={{ width: "100%", height: "100%" }}
-              src="https://www.hifocuscctv.com/images/about-us/original-1.jpg"
+              src="Images/about us banner.jpg"
               alt=""
             />
           </div>
@@ -55,7 +55,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">Product</h5>
+            <h5 id="heading-background">Product</h5>
             <span>
               Our company specialises in providing our valued customers with a
               range of products ranging from the latest network cameras to
@@ -66,7 +66,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">Network Cameras</h5>
+            <h5 id="heading-background">Network Cameras</h5>
             <span>
               In Network Cameras,Trinai offers the Premium Series, Quartz
               Series, Rapid Series, Velocity Series and IP PTZ Cameras. All of
@@ -75,7 +75,8 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">HD Cameras</h5>
+            {/* id="headingcolor" */}
+            <h5 id="heading-background">HD Cameras</h5>
             <span>
               Our catalogue of HD Analog Cameras consists of surveillance
               devices with resolutions starting from 720P to 4MP. Additionally,
@@ -84,7 +85,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">Network Video Recorders</h5>
+            <h5 id="heading-background">Network Video Recorders</h5>
             <span>
               An integral part of any surveillance device that undertakes data
               storage, we have NVRs compatible with practically every device
@@ -93,7 +94,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">HD Recorders</h5>
+            <h5 id="heading-background">HD Recorders</h5>
             <span>
               For those who are inclined to high definition viewing, we have HD
               recorders that are complemented with the Premium Series, Premium
@@ -102,7 +103,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">POE Switches</h5>
+            <h5 id="heading-background">POE Switches</h5>
             <span>
               Our POE switches are a simple yet powerful solution for installing
               networked video surveillance systems. Safety is always ensured
@@ -113,7 +114,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">Video Door Phones</h5>
+            <h5 id="heading-background">Video Door Phones</h5>
             <span>
               We provide IP Video Door Phones as well as standard Video Door
               Phones. Offering three tier security, our IP VDPs are considered
@@ -123,7 +124,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">
+            <h5 id="heading-background">
               Mobile DVRs, Mobile Cameras and Artificial Intelligence
             </h5>
             <span>
@@ -134,7 +135,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">Biometric Systems</h5>
+            <h5 id="heading-background">Biometric Systems</h5>
             <span>
               ObtainTrinai’s biometric systems that capture validations on the
               basis of several biological patterns inclusive of iris
@@ -144,7 +145,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="headingcolor">Video storage services</h5>
+            <h5 id="heading-background">Video storage services</h5>
             <span>
               Immaterial of the number of video cameras that are streaming,
               Trinai provides solutions that allow you to access and retrieve

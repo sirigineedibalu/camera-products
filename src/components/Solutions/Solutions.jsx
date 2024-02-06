@@ -1,5 +1,6 @@
 import React from "react";
 import "./Solutions.css";
+import { Link } from "react-router-dom";
 export const Solutions = () => {
   return (
     <div>
@@ -89,7 +90,7 @@ export const Solutions = () => {
             <div className="sol-img-div un-order-class">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/airport.jpg"
+                src="Images/SolutionImages/airport.jpg"
                 alt=""
               />
             </div>
@@ -116,11 +117,17 @@ export const Solutions = () => {
                 and relaying live video streams, users can monitor airport
                 activities even off-location.
               </span>
+              <div>
+                <Link to="/BankingSolutions">
+                  <button className="btn btn-info"> Read More</button>
+                </Link>
+              </div>
             </div>
+
             <div className="sol-background-div2">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>
@@ -133,7 +140,7 @@ export const Solutions = () => {
             <div className="sol-img-div">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/mall.jpg"
+                src="Images/SolutionImages/shopping mall.jpg"
                 alt=""
               />
             </div>
@@ -166,11 +173,16 @@ export const Solutions = () => {
                 allows coordination between the security personnel and aids in
                 crime investigation.
               </span>
+              <div>
+                {/* <Link to="/BankingSolutions"> */}
+                <button className="btn btn-info"> Read More</button>
+                {/* </Link> */}
+              </div>
             </div>
             <div className="sol-background-div1">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>
@@ -183,7 +195,7 @@ export const Solutions = () => {
             <div className="sol-img-div un-order-class">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/office.jpg"
+                src="Images/SolutionImages/office.jpg"
                 alt=""
               />
             </div>
@@ -212,60 +224,18 @@ export const Solutions = () => {
                 can experience decreasing liability from frivolous lawsuits and
                 claims.
               </span>
+              <button className="btn btn-info"> Read More</button>
             </div>
             <div className="sol-background-div2">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>
           </div>
         </div>
 
-        {/* <div style={{ width: "90%" }}>
-          <h2>Airport Security Solutions</h2>
-          <div className="solu-img-mat-div">
-            <div className="sol-matter-span-con">
-              <span>
-                Airports have a lot to deal with when it comes to security. From
-                facing the ever-present threat of terrorism to enforcing strict
-                rules and regulations, airport security personnel operate in a
-                fast-paced environment that offers no room for mistakes. IP
-                surveillance technology and new innovations in video analytics
-                are helping to raise airport security to new heights.
-              </span>
-              <span>
-                Besides the considerable challenges of airport security, there
-                is also the incredibly demanding criteria for protecting
-                passengers, preventing sabotage, fires, and explosions and
-                managing accesses and authorizations. Trinai provides airport
-                security solutions that can combat terrorism along with
-                providing advanced video analytics using behavioral technology
-                and enabling real-time surveillance from several digital
-                streams. The surveillance systems are flexible, scalable and can
-                be easily integrated into newer systems using digital encoders.
-                With robust IP-based surveillance systems capable of capturing
-                and relaying live video streams, users can monitor airport
-                activities even off-location.
-              </span>
-            </div>
-            <div className="sol-img-div">
-              <img
-                style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/airport.jpg"
-                alt=""
-              />
-            </div>
-            <div className="sol-background-div1">
-              <img
-                style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div> */}
         {/* 4 container */}
         <div style={{ width: "90%" }}>
           <h2 id="sol-heading">High End Security for Banks/Finance House</h2>
@@ -273,7 +243,7 @@ export const Solutions = () => {
             <div className="sol-img-div">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/Solution-Images-1000x800_Bank.jpg"
+                src="Images/SolutionImages/Bank.jpg"
                 alt=""
               />
             </div>
@@ -305,11 +275,12 @@ export const Solutions = () => {
                 evidence in court. This also includes ATM activity survey where
                 periodic transaction checks are conducted.
               </span>
+              <button className="btn btn-info"> Read More</button>
             </div>
             <div className="sol-background-div1">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>
@@ -322,7 +293,7 @@ export const Solutions = () => {
             <div className="sol-img-div un-order-class">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/Mall3.jpg"
+                src="Images/SolutionImages/Populated Area.jpg"
                 alt=""
               />
             </div>
@@ -348,11 +319,12 @@ export const Solutions = () => {
                 solidified with the most advanced and appropriate technologies
                 to ensure security in highly populous areas.
               </span>
+              <button className="btn btn-info"> Read More</button>
             </div>
             <div className="sol-background-div2">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>
@@ -365,7 +337,7 @@ export const Solutions = () => {
             <div className="sol-img-div">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/Public-place1.jpg"
+                src="Images/SolutionImages/City.jpg"
                 alt=""
               />
             </div>
@@ -396,11 +368,12 @@ export const Solutions = () => {
                 for the urban environment is developed to intelligently manage
                 traffic, daily life, transportation, assets, and infrastructure.
               </span>
+              <button className="btn btn-info"> Read More</button>
             </div>
             <div className="sol-background-div1">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>
@@ -413,7 +386,7 @@ export const Solutions = () => {
             <div className="sol-img-div un-order-class">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://www.hifocuscctv.com/images/solution/Solution-Images-1000x800_Traffic.jpg"
+                src="Images/SolutionImages/Transport – Mobile DVR as a solution.jpg"
                 alt=""
               />
             </div>
@@ -441,11 +414,12 @@ export const Solutions = () => {
                 systems from risks and threats. These solutions also reduce the
                 liability of passenger injuries in addition to other perils.
               </span>
+              <button className="btn btn-info"> Read More</button>
             </div>
             <div className="sol-background-div2">
               <img
                 style={{ width: "100%", height: "100%", borderRadius: "7px" }}
-                src="https://images.template.net/wp-content/uploads/2015/11/25190719/Plain-Blue-Light-Color-Photos-Gallery-Download.jpg"
+                src="Images/SolutionImages/background.jpg"
                 alt=""
               />
             </div>

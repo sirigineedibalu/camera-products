@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./MiddleBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 export const MiddleBar = () => {
@@ -27,7 +28,14 @@ export const MiddleBar = () => {
           </span>
           <center>
             {" "}
-            <button className="btn btn-primary">View more</button>
+            <button className="btn btn-primary">
+              <Link
+                style={{ textDecorationLine: "none", color: "#fff" }}
+                to="/NetworkingCameras"
+              >
+                View more{" "}
+              </Link>
+            </button>
           </center>
         </div>
         <div className="middle-color-con"></div>
@@ -45,7 +53,14 @@ export const MiddleBar = () => {
             through an internet connection.
           </span>
           <center>
-            <button className="btn btn-primary">View more</button>
+            <button className="btn btn-primary">
+              <Link
+                style={{ textDecorationLine: "none", color: "#fff" }}
+                to="/NetworkingCameras"
+              >
+                View more{" "}
+              </Link>
+            </button>
           </center>
         </div>
         <div className="middle-img-container">

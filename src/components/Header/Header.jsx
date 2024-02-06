@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+// Header.js
+import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineCancel } from "react-icons/md";
@@ -9,31 +10,29 @@ import { MdOutlineCancel } from "react-icons/md";
 export const Header = () => {
   const [isProductsDropdownVisible, setProductsDropdownVisibility] =
     useState(false);
-  // const [isvisible, setIsVisible] = useState(false);
-  let [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-  const handleProductsMouseEnter = () => {
-    setProductsDropdownVisibility(true);
+  const [myAccountShow, setMyAccountShow] = useState(false);
+
+  const handleProductsClick = () => {
+    setProductsDropdownVisibility(!isProductsDropdownVisible);
   };
-  const handleProductsMouseLeave = () => {
-    setProductsDropdownVisibility(false);
-  };
+
   const handleDisplay = () => {
-    setVisible(true);
-  };
-  const handleNotDisplay = () => {
-    setVisible(false);
-    console.log(visible + "---->after click");
+    setVisible(!visible);
   };
 
-  // const display = () => {
-  //   const value1 = document.getElementById("display");
-  //   // document.value1.style.display = "block";
-  //   console.log(value1);
-  // };
+  const onMyAccountShowDropDown = () => {
+    setMyAccountShow(!myAccountShow);
+  };
 
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+        // background: "red",
+      }}
+    >
       <div className="header-main-container">
         <div className="header-img-container">
           <Link to="/">
@@ -45,18 +44,18 @@ export const Header = () => {
           </Link>
         </div>
         <div className="header-sublist-container">
-          <div id="display" className="header--listitems-con">
-            <Link
+          <div
+            id="display"
+            className={`header--listitems-con ${visible ? "menu-open" : ""}`}
+          >
+            <NavLink
+              activeClassName="active"
               style={{ textDecoration: "none", color: "black" }}
               to="/Aboutus"
             >
               <span>About </span>
-            </Link>
-            <div
-              className="header-dropdown"
-              onMouseEnter={handleProductsMouseEnter}
-              onMouseLeave={handleProductsMouseLeave}
-            >
+            </NavLink>
+            <div className="header-dropdown" onClick={handleProductsClick}>
               <span>
                 Products
                 <IoIosArrowDown />
@@ -79,6 +78,14 @@ export const Header = () => {
                       Network Video Recorders
                     </Link>
                   </span>
+                  {/* <span>
+                    <Link
+                      style={{ textDecoration: "none", color: "black" }}
+                      to="/NetworkingVideos"
+                    >
+                      Network Video Recorders
+                    </Link>
+                  </span> */}
                   <span>
                     <Link
                       style={{ textDecoration: "none", color: "black" }}
@@ -156,14 +163,15 @@ export const Header = () => {
               </Link>
             </span>
             <div
+              onClick={onMyAccountShowDropDown}
               className="header-dropdown"
-              onMouseEnter={handleProductsMouseEnter}
-              onMouseLeave={handleProductsMouseLeave}
+              // onMouseEnter={handleProductsMouseEnter}
+              // onMouseLeave={handleProductsMouseLeave}
             >
               <span>
                 My account <IoIosArrowDown />
               </span>
-              {isProductsDropdownVisible && (
+              {myAccountShow && (
                 <div className="header-dropdown-content">
                   <span>
                     <Link
@@ -193,32 +201,44 @@ export const Header = () => {
               </Link>
             </span>
           </div>
-
-          <div className="header-search-main">
-            <input
-              className="header-search-item"
-              type="text"
-              placeholder="Search Here"
-            />
-            <FaSearch />
-          </div>
         </div>
-        <div
-          className="header-hamb-icon"
-          onClick={handleDisplay}
-          // onMouseLeave={handleNotDisplay}
-        >
+        <div className="header-search-main">
+          <input
+            className="header-search-item"
+            type="text"
+            placeholder="Search Here"
+          />
+          <FaSearch />
+        </div>
+        <div className="header-hamb-icon" onClick={handleDisplay}>
           <span>
-            <RxHamburgerMenu />
+            {visible ? (
+              <MdOutlineCancel size={22} />
+            ) : (
+              <RxHamburgerMenu size={22} />
+            )}
           </span>
           {visible && (
-            <div className="header-hamb-content">
-              <span style={{ border: "1px solid red" }}>
-                <MdOutlineCancel size={22} onClick={handleNotDisplay} />
-              </span>
-              <span>About</span>
-              <span>Products</span>
-              <span>Solution</span>
+            <div className="header-hamb-content" onClick={handleDisplay}>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/Aboutus"
+              >
+                <span>About</span>
+              </Link>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/ProductDetails"
+              >
+                <span>Products</span>
+              </Link>
+              <span></span>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/Support"
+              >
+                <span>Solution</span>
+              </Link>
               <span>News&Events</span>
               <span>Support</span>
               <span>My Account</span>

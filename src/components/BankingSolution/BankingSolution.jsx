@@ -59,7 +59,7 @@ const BankingSolution = () => {
         </div>
         <div className="bank-challenges-Solution-list">
           <div>
-            <h2>Challenges</h2>
+            <h2 id="heading-background">Challenges</h2>
             <li>High resolution video for post analysis</li>
             <li>Ensure safety of customers and employees</li>
             <li>Track transactions for bank and customer satisfaction</li>
@@ -70,7 +70,7 @@ const BankingSolution = () => {
             <li>Health monitoring at control room for system ability</li>
           </div>
           <div>
-            <h2>Solution</h2>
+            <h2 id="heading-background">Solution</h2>
             <li>
               High resolution cameras and DVR will record details of the
               suspicious persons

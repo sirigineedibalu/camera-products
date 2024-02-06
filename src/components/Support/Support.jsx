@@ -6,7 +6,7 @@ export const Support = () => {
     <div className="support-main-class">
       <div className="support-hero-container">
         <img
-          width={{ width: "100%", height: "100%" }}
+          style={{ width: "100%", height: "100%" }}
           src="Images/Sliders/support.jpg"
           alt=""
         />

@@ -26,8 +26,16 @@ import { ClientSoftware } from "./components/ClientSoftware/ClientSoftware";
 import { Accesories } from "./components/Accesories/Accesories";
 import CommonCompo from "./components/CommonCompo/CommonCompo";
 import BankingSolution from "./components/BankingSolution/BankingSolution";
+import { useState } from "react";
+// import { Oursolutions } from "./components/Oursolutions/Oursolutions";
 
 function App() {
+  const [newsFeddId, setNewsFeddId] = useState(null);
+
+  const getIdFromNewsFeed = (id) => {
+    setNewsFeddId(id);
+  };
+
   return (
     <div>
       <Routers>
@@ -50,14 +58,20 @@ function App() {
           <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/NetworkingCameras" element={<NetworkingCameras />} />
           <Route path="/ProductDetails" element={<Product />} />
-          <Route path="/Solutions" element={<Solutions />} />
-          <Route path="/News-Feed" element={<NewsFeed />} />
+          <Route
+            path="/News-Feed"
+            element={<NewsFeed getIdFromNewsFeed={getIdFromNewsFeed} />}
+          />
           <Route path="/Support" element={<Support />} />
+          <Route path="/Solutions" element={<Solutions />} />
           <Route path="/Loginpage" element={<Loginpage />} />
           <Route path="/RegisterForm" element={<RegisterForm />} />
           <Route path="/Contactus" element={<ContactUs />} />
           <Route path="/ProductDetails" element={<NetworkingCameras />} />
-          <Route path="/Getdata" element={<Newspage />} />
+          <Route
+            path="/Getdata"
+            element={<Newspage newsFeddId={newsFeddId} />}
+          />
           <Route path="/NetworkingVideos" element={<NetworkVideoRec />} />
           <Route path="/HDAnalog" element={<HDAnalog />} />
           <Route path="/HDdvrs" element={<HDdvrs />} />
@@ -67,6 +81,8 @@ function App() {
           <Route path="/Accessories" element={<Accesories />} />
           <Route path="/ProductDetails" element={<CommonCompo />} />
           <Route path="/BankingSolutions" element={<BankingSolution />} />
+          <Route path="/Login" element={<Loginpage />} />
+          <Route path="/Register" element={<RegisterForm />} />
         </Routes>
         <Footer />
       </Routers>

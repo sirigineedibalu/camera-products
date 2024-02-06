@@ -1,93 +1,45 @@
+// ImageSlider.js
+
 import React from "react";
-import "./Courosual.css";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { useState } from "react";
-// import { BsChat, BsPhone } from "react-icons/bs";
+import "./Courosual.css";
 
 export const Courosual = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  var settings = {
-    scrollX: true,
-    infinite: true,
+  const sliderSettings = {
     dots: true,
-    speed: 100,
-    scroll: true,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-
-    afterChange: (current) => {
-      setCurrentSlide(current);
-    },
+    arrows: false,
+    dotsClass: "slick-dots",
   };
-  console.log(currentSlide);
   return (
-    <>
-      <Slider style={{ width: "100%" }} {...settings}>
-        <div className="d-flex cls ">
-          <img src="images/ccimg.jpg" alt="" className="fig" />
-          <div className="header-coursoual-container">
-            <img
-              style={{ width: "100%", height: "100%" }}
-              src="Images/Capture.JPG"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="d-flex cls ">
-          <img src="images/html.jpg" alt="" className="fig" />
-          <div className="header-coursoual-container">
-            <img
-              style={{ width: "100%", height: "100%" }}
-              src="/Images\solar.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="d-flex cls ">
-          <img src="images/img1.jpg" alt="" className="fig" />
-          <div className="header-coursoual-container">
-            <img
-              style={{ width: "100%", height: "100%" }}
-              src="/Images\cctv 2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        {/* <div className="d-flex cls ">
-          <img src="images/sales.jpg" alt="" className="fig" />
-          <div className="header-coursoual-container">
-            <img
-              style={{ width: "100%", height: "100%" }}
-              src="https://www.hifocuscctv.com/images/WhatsAppImage2023-07-31at170108.jpeg"
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="d-flex cls ">
-          <img src="images/webimg.jpg" alt="" className="fig" />
-          <div>
-            <img
-              className="header-coursoual-container"
-              src="Images/trinai.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="d-flex cls ">
-          <img src="images/sales.jpg" alt="" className="fig" />
-          <div>
-            <img
-              className="header-coursoual-container"
-              src="Images/trinai.png"
-              alt=""
-            />
-          </div>
-        </div> */}
-      </Slider>
-    </>
+    <Slider {...sliderSettings}>
+      <div className="carousel-container">
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src="Images/cctv 2.jpg"
+          alt=""
+        />
+      </div>
+      <div className="carousel-container">
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src="Images/solar.jpg"
+          alt=""
+        />
+      </div>
+      <div className="carousel-container">
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src="Images/Capture.JPG"
+          alt=""
+        />
+      </div>
+    </Slider>
   );
 };

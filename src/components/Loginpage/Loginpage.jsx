@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Loginpage.css";
+import { Link } from "react-router-dom";
 
 export const Loginpage = () => {
   const [username, setUsername] = useState("");
@@ -54,6 +55,14 @@ export const Loginpage = () => {
           </div>
           {errorMessage && <p className="error-message">{errorMessage}</p>}
           <button type="submit">Login</button>
+          <div className="register-class">
+            <p>
+              Don't have an account?{" "}
+              <Link style={{ textDecoration: "none" }} to="/Register">
+                <b>Register</b>
+              </Link>
+            </p>
+          </div>
         </form>
       )}
     </div>

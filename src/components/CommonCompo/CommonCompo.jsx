@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { newPTZ } from "../Data/PTZ";
 import "./CommonCompo.css";
@@ -18,9 +18,15 @@ const CommonCompo = () => {
   //
   const [initialDisplay, setInitialDisplay] = useState("");
 
+  const [pixelInitial, setPixelInitial] = useState("");
+
   // const [initialAllArray, setInitialAllArray] = useState([]);
 
   // console.log(pathValue);
+  const scroll = useRef();
+  useEffect(() => {
+    scroll.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
   useEffect(() => {
     const filterData = newPTZ.filter((each) => each.name === pathValue);
     // console.log(filterData);
@@ -61,6 +67,7 @@ const CommonCompo = () => {
     // console.log(va);
 
     setNewFilterSubCam(va);
+    setPixelInitial(value);
   };
 
   useEffect(() => {
@@ -78,25 +85,40 @@ const CommonCompo = () => {
     // let initialState =
   }, [singleCamsData]);
 
-  console.log(singleCamsData);
+  // console.log(singleCamsData);
   // console.log(filterSubCams);
 
-  console.log(initialDisplay);
+  // console.log(pixelInitial);
 
   return (
-    <div className="main__common__card">
+    <div className="main__common__card" ref={scroll}>
       {filterSubCams?.length > 0 && (
         <div className="sub__cams__card_head">
           <div className="single__smax__main__card">
             {secondData[0]?.subCams?.map((each) => (
               <div
                 style={{
-                  background: initialDisplay === each && "#02b8fa",
+                  background: initialDisplay === each.name && "#02b8fa",
                 }}
-                onClick={() => onChangeTab(each)}
+                onClick={() => onChangeTab(each.name)}
                 className="single__cams__details__head"
               >
-                <span>{each}</span>
+                <div
+                  style={{
+                    width: "150px",
+                    height: "150px",
+                    // border: "1px solid red",
+                  }}
+                >
+                  <img
+                    style={{
+                      width: "100%",
+                    }}
+                    src={each.img}
+                    alt="not pic"
+                  />
+                </div>
+                <span>{each.name}</span>
               </div>
             ))}
           </div>
@@ -106,7 +128,7 @@ const CommonCompo = () => {
         {uniquesPixs?.map((each) => (
           <div
             style={{
-              background: initialDisplay === each.id && "#02b8fa",
+              background: pixelInitial === each && "#02b8fa",
             }}
             onClick={() => onFunctionPixChange(each)}
             className="single__cams__details"

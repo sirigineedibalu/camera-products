@@ -38,7 +38,7 @@
 }
 .news-main-dta {
   width: 350px;
-  height: 400px;
+  /* height: 400px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,8 +58,8 @@
   flex-direction: column;
   position: relative;
   top: -50px;
-  /* height: 250px;
-  overflow: hidden; */
+  height: 300px;
+  /* overflow: hidden; */
   /* border: 1px solid red; */
 }
 .btn1 {

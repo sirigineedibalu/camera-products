@@ -31,7 +31,10 @@
 }
 
 .trend-main-imgcon:hover .trend-img-conta {
-  transform: rotate(5deg);
+  /* transform: rotate(5deg); */
+  transform: scale(1.1);
+  /* zoom: 0.8; */
+  transition: all 0.8s ease-in-out;
 }
 
 .trend-img-conta {

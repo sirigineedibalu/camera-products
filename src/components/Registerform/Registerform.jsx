@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Registerform.css";
+import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
   const [username, setUsername] = useState("");
@@ -59,6 +60,14 @@ const RegisterForm = () => {
         </div>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button type="submit">Register</button>
+        <div className="Login-class">
+          <p>
+            Already have an account?
+            <Link style={{ textDecoration: "none" }} to="/Login">
+              <b>Login Here</b>
+            </Link>
+          </p>
+        </div>
       </form>
     </div>
   );

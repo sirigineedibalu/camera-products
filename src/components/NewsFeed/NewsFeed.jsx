@@ -2,7 +2,12 @@ import React from "react";
 import "./NewsFeed.css";
 import { Newsfeed } from "../Data/Newsfeed";
 import { Link } from "react-router-dom";
-export const NewsFeed = () => {
+export const NewsFeed = ({ getIdFromNewsFeed }) => {
+  const onBtnClickGetId = (id) => {
+    console.log(id);
+    getIdFromNewsFeed(id);
+  };
+
   return (
     <div className="news-head-container">
       <div className="news-img-div">
@@ -14,8 +19,8 @@ export const NewsFeed = () => {
       </div>
       <div className="news-middle-container">
         <div className="news-loop-method">
-          {Newsfeed.map((i) => (
-            <div className="news-main-dta">
+          {Newsfeed.map((i, key) => (
+            <div key={key} className="news-main-dta">
               <div className="news-data-img">
                 <img
                   style={{
@@ -32,17 +37,19 @@ export const NewsFeed = () => {
                 <h5 id="h5heading">{i.name}</h5>
                 <span
                   style={{
-                    height: "150px",
+                    // height: "180px",
                     overflow: "scroll",
                   }}
                 >
                   {i.des}
                 </span>
               </div>
-              <button className="btn1 ">
+              <button className="btn1 " onClick={() => onBtnClickGetId(i?.id)}>
                 <Link
                   style={{ textDecoration: "none", color: "red" }}
                   to="/Getdata"
+                  // state={{ id: "occupation" }}
+                  // to={{ pathname: "/Getdata", state: { id: i?.id } }}
                 >
                   Read more..
                 </Link>
