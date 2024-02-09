@@ -12,7 +12,7 @@ export const MiddleBar = () => {
         <div className="middle-img-container">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="Images/11.png"
+            src="Images/DOME (2).png"
             alt=""
           />
         </div>
@@ -66,7 +66,7 @@ export const MiddleBar = () => {
         <div className="middle-img-container">
           <img
             style={{ width: "100%", height: "100%" }}
-            src="Images/smart-ip-cameras-1.png"
+            src="Images/Bullet_1 (4).png"
             alt=""
           />
         </div>

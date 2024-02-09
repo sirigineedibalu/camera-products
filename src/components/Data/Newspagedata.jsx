@@ -76,13 +76,16 @@ export const Newspagedata = [
     id: "5",
     image: "Images/NewspageImages/city.jpg",
     Heading: "“Surveillance” ",
-    Des1: " The future of surveillance is going to bring about many new technological adaptations, this much is evident from existing trends in the industry. What is in store for us can be seen in tech journals around the world. Many proponents of the concept of “Surveillance” believe that it is going to be the future trend in the surveillance industry.",
-    Des2: "The term, deriving from the French root words meaning roughly “the see from below”, was coined by computational photographer and inventor Steve Mann. Mann feels that as technology progresses and gets more affordable for everybody, people should start archiving records of daily events themselves. ",
+    Des1: " The future of surveillance is going to bring about many new technological adaptations, this much is evident from existing trends in the industry. ",
+    Des2: "What is in store for us can be seen in tech journals around the world. Many proponents of the concept of “Surveillance” believe that it is going to be the future trend in the surveillance industry.",
     heading1: "",
+
+    //
     Span1:
-      "Last year Google made a huge splash in many industries by unveiling their concept product video for the Google Glass. Effectively making reality out of concepts Steve Mann was predicting would become common place in society since the early 1980′s. Everyday people recording the events around them constantly is not the extent of Mann’s theory. According to the tenured, engineering professor technologies that would allow the human eye itself to be used as a recording device are a very real concept. In fact, the first successful tests on that very technology were done back in 1999 by UC Berkeley researchers; ",
+      "The term, deriving from the French root words meaning roughly “the see from below”, was coined by computational photographer and inventor Steve Mann. Mann feels that as technology progresses and gets more affordable for everybody, people should start archiving records of daily events themselves. ",
     heading2: "",
-    Span2: "",
+    Span2:
+      "Last year Google made a huge splash in many industries by unveiling their concept product video for the Google Glass. Effectively making reality out of concepts Steve Mann was predicting would become common place in society since the early 1980′s. Everyday people recording the events around them constantly is not the extent of Mann’s theory. According to the tenured, engineering professor technologies that would allow the human eye itself to be used as a recording device are a very real concept. In fact, the first successful tests on that very technology were done back in 1999 by UC Berkeley researchers;",
     heading3: "",
     Span3: "",
     Span4: "",

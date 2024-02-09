@@ -1005,7 +1005,14 @@ export const newPTZ = [
   },
   {
     name: "/Accessories",
-    subCams: ["Bracket", "Housing", "Lens"],
+    subCams: [
+      {
+        name: "Bracket",
+        img: "Images/02.png",
+      },
+      { name: "Housing", img: "Images/1 (1).png" },
+      { name: "Lens", img: "Images/lens.png" },
+    ],
     cams: [
       {
         id: "Bullet&Dom",
@@ -1415,25 +1422,34 @@ export const newPTZ = [
   },
   {
     name: "/ClientSoftware",
-    subCams: ["Pc-Software", "Mobile-Software"],
+    subCams: [
+      {
+        name: "Mb-software",
+        img: "https://purepng.com/public/uploads/large/purepng.com-mac-monitormonitorscomputer-displayvisual-displayelectronicdisplay-devicecrystal-displaylcdledamoled-1701528362485ynjbu.png",
+      },
+      {
+        name: "Pc-software",
+        img: "Images/tab.png",
+      },
+    ],
     cams: [
       //mobile software
       {
-        id: "mb-software",
+        id: "Mb-software",
         image:
           "https://www.univiewworld.in/Products/Uniview-2016/Client-Software/Mobile-Client-Software/UNIVIEW-EZView-Mobile-Surveillance-Client.png",
         name: "UNIVIEW-EZView-Mobile-Surveillance-Client",
         des: "EZView Mobile Surveillance Client App",
-        subId: "Mobile-Software",
+        subId: "Mb-software",
       },
       //pc software
       {
-        id: "pc-software",
+        id: "Pc-software",
         image:
           "https://www.univiewworld.in/Products/Uniview-2016/Client-Software/PC-Client-Software/UNV-EZStation-v2.png",
         name: "UNV-EZStation-v2",
         des: "EZStation Video Management Software",
-        subId: "Pc-Software",
+        subId: "Pc-software",
       },
     ],
   },

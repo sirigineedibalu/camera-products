@@ -36,9 +36,9 @@ export const Product = () => {
     pdf.addImage(imgData, "PNG", 0, 0, width, height);
 
     pdf.addPage();
-    pdf.text("Page 2 Content", 10, 10);
+    pdf.text("Page 5 Content", 20, 30);
 
-    pdf.save("trinay.pdf");
+    pdf.save("Trinai Datasheet.pdf");
   };
 
   return (
@@ -272,7 +272,6 @@ export const Product = () => {
               <span style={{ width: "20%" }}>960.71 KB</span>
               <span style={{ width: "20%" }}>pdf</span>
               <button
-                onClick={downloadPdf}
                 style={{
                   width: "100px",
                   backgroundColor: "#32a8a2",
@@ -287,7 +286,7 @@ export const Product = () => {
           </div>
         </div>
       </div>
-      {/* <button>Download</button> */}
+      <button onClick={downloadPdf}>Download</button>
     </div>
   );
 };

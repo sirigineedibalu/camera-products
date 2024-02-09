@@ -2,6 +2,10 @@ import React from "react";
 import "./Solutions.css";
 import { Link } from "react-router-dom";
 export const Solutions = () => {
+  // const myData = {
+  //   name: "Some thing",
+  //   price: 123,
+  // };
   return (
     <div>
       <div className="solution-main-div">
@@ -11,7 +15,7 @@ export const Solutions = () => {
           alt=""
         />
       </div>
-      <div className="sol-main-div">
+      <div id="1" className="sol-main-div">
         <div className="sol-first-division">
           <h5 id="sol-heading">
             Next-Generation Security Solutions with Trinai
@@ -118,7 +122,7 @@ export const Solutions = () => {
                 activities even off-location.
               </span>
               <div>
-                <Link to="/BankingSolutions">
+                <Link to="/BankingSolutions" state={{ name: "1" }}>
                   <button className="btn btn-info"> Read More</button>
                 </Link>
               </div>
@@ -174,9 +178,9 @@ export const Solutions = () => {
                 crime investigation.
               </span>
               <div>
-                {/* <Link to="/BankingSolutions"> */}
-                <button className="btn btn-info"> Read More</button>
-                {/* </Link> */}
+                <Link to="/BankingSolutions" state={{ name: "2" }}>
+                  <button className="btn btn-info"> Read More</button>
+                </Link>
               </div>
             </div>
             <div className="sol-background-div1">
@@ -224,7 +228,9 @@ export const Solutions = () => {
                 can experience decreasing liability from frivolous lawsuits and
                 claims.
               </span>
-              <button className="btn btn-info"> Read More</button>
+              <Link to="/BankingSolutions" state={{ name: "3" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
             <div className="sol-background-div2">
               <img
@@ -275,7 +281,9 @@ export const Solutions = () => {
                 evidence in court. This also includes ATM activity survey where
                 periodic transaction checks are conducted.
               </span>
-              <button className="btn btn-info"> Read More</button>
+              <Link to="/BankingSolutions" state={{ name: "4" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
             <div className="sol-background-div1">
               <img
@@ -319,7 +327,9 @@ export const Solutions = () => {
                 solidified with the most advanced and appropriate technologies
                 to ensure security in highly populous areas.
               </span>
-              <button className="btn btn-info"> Read More</button>
+              <Link to="/BankingSolutions" state={{ name: "5" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
             <div className="sol-background-div2">
               <img
@@ -368,7 +378,9 @@ export const Solutions = () => {
                 for the urban environment is developed to intelligently manage
                 traffic, daily life, transportation, assets, and infrastructure.
               </span>
-              <button className="btn btn-info"> Read More</button>
+              <Link to="/BankingSolutions" state={{ name: "6" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
             <div className="sol-background-div1">
               <img
@@ -414,7 +426,9 @@ export const Solutions = () => {
                 systems from risks and threats. These solutions also reduce the
                 liability of passenger injuries in addition to other perils.
               </span>
-              <button className="btn btn-info"> Read More</button>
+              <Link to="/BankingSolutions" state={{ name: "7" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
             <div className="sol-background-div2">
               <img

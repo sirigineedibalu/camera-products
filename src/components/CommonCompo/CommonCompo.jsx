@@ -5,22 +5,56 @@ import "./CommonCompo.css";
 const CommonCompo = () => {
   const location = useLocation();
   const pathValue = location.pathname;
-  // main
-  const [secondData, setSecondData] = useState([]);
+  // this both are stored all single cams like networks all
+  // const [secondData, setSecondData] = useState([]);
+  // const [singleCamsData, setSingleCamsData] = useState([]);
 
-  const [singleCamsData, setSingleCamsData] = useState([]);
-
-  const [filterSubCams, setFilterSubCams] = useState([]);
-  const [newFilterSubCam, setNewFilterSubCam] = useState([]);
-
-  const [uniquesPixs, setUniquesPix] = useState([]);
-  //
-  //
-  const [initialDisplay, setInitialDisplay] = useState("");
-
-  const [pixelInitial, setPixelInitial] = useState("");
-
+  // // this two states are store initailly cams like ptz
+  // const [newFilterSubCam, setNewFilterSubCam] = useState([]);
   // const [initialAllArray, setInitialAllArray] = useState([]);
+
+  // // if subCams present stores that data
+
+  // const [subCams, setSubCams] = useState([]);
+
+  // const [filterSubCams, setFilterSubCams] = useState([]);
+
+  // // store pixles data as uniques values Ex ptz all uniques pixels
+  // const [uniquesPixs, setUniquesPix] = useState([]);
+  // //
+  // //
+  // const [initialDisplay, setInitialDisplay] = useState("");
+
+  // const [pixelInitial, setPixelInitial] = useState("");
+
+  //
+  //
+
+  //
+  //
+  //
+  //
+  //
+  //
+
+  const [firstInitialData, setFirstInitialData] = useState([]);
+  const [secondInitialData, setSecondInitialData] = useState([]);
+
+  // store subcams
+  const [subCams, setSubCams] = useState([]);
+
+  // store initially subCams
+  const [initiallySubCams, setInitiallySubCams] = useState("");
+
+  // store unique pixels
+  const [uniquePixls, setUniquePixls] = useState([]);
+
+  // store uniquepixles initially values
+  const [uniquePixInitially, setUniquePixInitially] = useState("");
+
+  // main data store
+
+  const [mainData, setMainData] = useState([]);
 
   // console.log(pathValue);
   const scroll = useRef();
@@ -29,76 +63,100 @@ const CommonCompo = () => {
   }, []);
   useEffect(() => {
     const filterData = newPTZ.filter((each) => each.name === pathValue);
-    // console.log(filterData);
-    setSingleCamsData(filterData);
-    setSecondData(filterData);
+    setFirstInitialData(filterData);
+    setSecondInitialData(filterData);
   }, [pathValue]);
 
   useEffect(() => {
-    let n = secondData[0]?.cams;
-    setFilterSubCams(n);
-    setNewFilterSubCam(n);
-  }, [secondData]);
-
-  const onChangeTab = (name) => {
-    console.log(name);
-    const newFilterBasedOnSubId = singleCamsData[0]?.cams?.filter(
-      (each) => each.subId === name
-    );
-
-    // console.log(newFilterBasedOnSubId);
-
-    setFilterSubCams(newFilterBasedOnSubId);
-    setNewFilterSubCam(newFilterBasedOnSubId);
-
-    // console.log(initialValue);
-    setInitialDisplay(name);
-  };
-
-  useEffect(() => {
-    const uniqueCamsPix = [...new Set(filterSubCams?.map((each) => each.id))];
-    // console.log(uniqueCamsPix);
-    setUniquesPix(uniqueCamsPix);
-  }, [filterSubCams]);
-
-  const onFunctionPixChange = (value) => {
-    console.log(value);
-    let va = filterSubCams?.filter((each) => each.id === value);
-    // console.log(va);
-
-    setNewFilterSubCam(va);
-    setPixelInitial(value);
-  };
-
-  useEffect(() => {
-    if (singleCamsData[0]?.subCams.length) {
-      // console.log(singleCamsData[0]?.subCams.length);
-      let initialValue = singleCamsData[0]?.subCams[0];
-      // console.log(initialValue);
-      setInitialDisplay(initialValue);
-      let initialDisplayArr = singleCamsData[0]?.cams?.filter(
+    if (firstInitialData[0]?.subCams.length > 0) {
+      setSubCams(firstInitialData[0]?.subCams);
+      let initialValue = firstInitialData[0]?.subCams[0]?.name;
+      setInitiallySubCams(initialValue);
+      console.log(initialValue);
+      let initialDisplayArr = firstInitialData[0]?.cams?.filter(
         (each) => each.subId === initialValue
       );
       console.log(initialDisplayArr);
-      setNewFilterSubCam(initialDisplayArr);
+      const uniqueCamsPix = [
+        ...new Set(initialDisplayArr?.map((each) => each.id)),
+      ];
+      setUniquePixInitially(uniqueCamsPix[0]);
+      setUniquePixls(uniqueCamsPix);
+      console.log(uniqueCamsPix[0]);
+
+      const mainData = initialDisplayArr.filter(
+        (each) => each.id === uniqueCamsPix[0]
+      );
+      // console.log(mainData);
+      setMainData(mainData);
+    } else {
+      const uniqueCamsPix = [
+        ...new Set(firstInitialData[0]?.cams?.map((each) => each.id)),
+      ];
+      // console.log(uniqueCamsPix);
+      setUniquePixInitially(uniqueCamsPix[0]);
+      setUniquePixls(uniqueCamsPix);
+
+      const mainData = firstInitialData[0]?.cams?.filter(
+        (each) => each.id === uniqueCamsPix[0]
+      );
+      // console.log(mainData);
+      setMainData(mainData);
     }
-    // let initialState =
-  }, [singleCamsData]);
+  }, [firstInitialData]);
 
-  // console.log(singleCamsData);
-  // console.log(filterSubCams);
+  const onChangeTab = (name) => {
+    console.log(name);
+    console.log(firstInitialData[0]?.cams);
+    setInitiallySubCams(name);
+    let initialDisplayArr = firstInitialData[0]?.cams?.filter(
+      (each) => each.subId === name
+    );
+    console.log(initialDisplayArr);
+    const uniqueCamsPix = [
+      ...new Set(initialDisplayArr?.map((each) => each.id)),
+    ];
+    setUniquePixInitially(uniqueCamsPix[0]);
+    setUniquePixls(uniqueCamsPix);
+    console.log(uniqueCamsPix);
+    const mainData = initialDisplayArr.filter(
+      (each) => each.id === uniqueCamsPix[0]
+    );
+    // console.log(mainData);
+    setMainData(mainData);
+  };
 
-  // console.log(pixelInitial);
+  const onFunctionPixChange = (pix) => {
+    console.log(pix);
+    if (initiallySubCams) {
+      let initialDisplayArr = firstInitialData[0]?.cams?.filter(
+        (each) => each.subId === initiallySubCams
+      );
+      console.log(initialDisplayArr);
+      const mainData = initialDisplayArr.filter((each) => each.id === pix);
+      setUniquePixInitially(pix);
+      setMainData(mainData);
+    } else {
+      console.log(pix);
+      setUniquePixInitially(pix);
+      const mainData = firstInitialData[0]?.cams?.filter(
+        (each) => each.id === pix
+      );
+      // console.log(mainData);
+      setMainData(mainData);
+    }
+  };
 
   return (
     <div className="main__common__card" ref={scroll}>
-      {filterSubCams?.length > 0 && (
+      {subCams.length > 0 && (
         <div className="sub__cams__card_head">
           <div className="single__smax__main__card">
-            {secondData[0]?.subCams?.map((each) => (
+            {subCams.map((each, key) => (
               <div
+                key={key}
                 style={{
-                  background: initialDisplay === each.name && "#02b8fa",
+                  background: initiallySubCams === each.name && "#02b8fa",
                 }}
                 onClick={() => onChangeTab(each.name)}
                 className="single__cams__details__head"
@@ -107,6 +165,7 @@ const CommonCompo = () => {
                   style={{
                     width: "150px",
                     height: "150px",
+                    // overflow: "hidden",
                     // border: "1px solid red",
                   }}
                 >
@@ -124,11 +183,12 @@ const CommonCompo = () => {
           </div>
         </div>
       )}
+
       <div className="sub__cams__card">
-        {uniquesPixs?.map((each) => (
+        {uniquePixls?.map((each) => (
           <div
             style={{
-              background: pixelInitial === each && "#02b8fa",
+              background: uniquePixInitially === each && "#02b8fa",
             }}
             onClick={() => onFunctionPixChange(each)}
             className="single__cams__details"
@@ -139,7 +199,7 @@ const CommonCompo = () => {
       </div>
       <hr />
       <div className="main__all__cams__display__card">
-        {newFilterSubCam?.map((each) => (
+        {mainData?.map((each) => (
           <div className="main__cams__single__card">
             <img style={{ width: "100%" }} src={each.image} alt="" />
             <h3>{each.name}</h3>

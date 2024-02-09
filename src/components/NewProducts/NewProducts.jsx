@@ -56,7 +56,7 @@ export const NewProducts = () => {
               />
             </div>
             <Link
-              style={{ color: "blue", textDecoration: "none" }}
+              style={{ color: "#077cad", textDecoration: "none" }}
               to="/productDetails"
             >
               <div>

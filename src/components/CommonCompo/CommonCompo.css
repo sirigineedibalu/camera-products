@@ -36,8 +36,10 @@
 }
 .single__cams__details__head {
   width: fit-content;
+  /* height: 150px; */
   padding: 10px 20px;
   background-color: rgb(13, 122, 224);
+  /* border: 1px solid red; */
 
   /* border-right: 1px solid black; */
   color: #fff;

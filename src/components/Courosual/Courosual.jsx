@@ -29,7 +29,7 @@ export const Courosual = () => {
       <div className="carousel-container">
         <img
           style={{ width: "100%", height: "100%" }}
-          src="Images/solar.jpg"
+          src="Images/cctv 3.jpg"
           alt=""
         />
       </div>

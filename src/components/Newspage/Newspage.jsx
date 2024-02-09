@@ -1,11 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Newspage.css";
-// import { useLocation } from "react-router-dom";
 import { Newspagedata } from "../Data/Newspagedata";
 export const Newspage = ({ newsFeddId }) => {
-  // const location = useLocation();
-  // console.log(location.state);
-
   const [id, setId] = useState(null);
 
   const [data, setData] = useState([]);
@@ -29,7 +25,7 @@ export const Newspage = ({ newsFeddId }) => {
     let filterDate;
     if (id) {
       // console.log(id);
-      filterDate = Newspagedata.filter((each) => each.id == id);
+      filterDate = Newspagedata.filter((each) => each.id === id);
       // console.log(filterDate);
       setData(filterDate);
     } else {

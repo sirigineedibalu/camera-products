@@ -1,18 +1,19 @@
-// Header.js
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import "./Header.css";
-import { Link, NavLink } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { IoIosArrowDown, IoIosArrowDropleft } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineCancel } from "react-icons/md";
+
+import "./Header.css";
 
 export const Header = () => {
   const [isProductsDropdownVisible, setProductsDropdownVisibility] =
     useState(false);
   const [visible, setVisible] = useState(false);
-
   const [myAccountShow, setMyAccountShow] = useState(false);
+
+  const [hover, setHover] = useState(false);
 
   const handleProductsClick = () => {
     setProductsDropdownVisibility(!isProductsDropdownVisible);
@@ -26,11 +27,19 @@ export const Header = () => {
     setMyAccountShow(!myAccountShow);
   };
 
+  const MouseEnter = () => {
+    setHover(hover);
+    console.log(hover);
+  };
+  const Mouseleave = () => {
+    setHover(hover);
+    console.log(!hover);
+  };
+
   return (
     <div
       style={{
         width: "100%",
-        // background: "red",
       }}
     >
       <div className="header-main-container">
@@ -48,158 +57,143 @@ export const Header = () => {
             id="display"
             className={`header--listitems-con ${visible ? "menu-open" : ""}`}
           >
-            <NavLink
+            <Link
+              id="header-color"
               activeClassName="active"
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", padding: "10px" }}
               to="/Aboutus"
             >
               <span>About </span>
-            </NavLink>
-            <div className="header-dropdown" onClick={handleProductsClick}>
-              <span>
+            </Link>
+            <div
+              style={{ padding: "10px" }}
+              className="header-dropdown"
+              onClick={handleProductsClick}
+            >
+              <span id="header-color" style={{ padding: "8px" }}>
                 Products
                 <IoIosArrowDown />
               </span>
               {isProductsDropdownVisible && (
                 <div className="header-dropdown-content">
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/NetworkingCameras"
-                    >
-                      Network Cameras
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/NetworkingVideos"
-                    >
-                      Network Video Recorders
-                    </Link>
-                  </span>
-                  {/* <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/NetworkingVideos"
-                    >
-                      Network Video Recorders
-                    </Link>
-                  </span> */}
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/HDAnalog"
-                    >
-                      HD Analog Cameras
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/HDdvrs"
-                    >
-                      HD DVRs
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/NetworkStorage"
-                    >
-                      Network Storage
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/Codec"
-                    >
-                      Codecs
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/Accessories"
-                    >
-                      Accessories
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/ClientSoftware"
-                    >
-                      Client Software
-                    </Link>
-                  </span>
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    to="/NetworkingCameras"
+                  >
+                    <span>Network Cameras</span>{" "}
+                  </Link>
+
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    to="/NetworkingVideos"
+                  >
+                    <span>Network Video Recorders </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/HDAnalog">
+                    <span>HD Analog Cameras </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/HDdvrs">
+                    <span>HD DVRs </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/NetworkStorage">
+                    {" "}
+                    <span>Network Storage </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/Codec">
+                    {" "}
+                    <span>Codecs </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/Accessories">
+                    {" "}
+                    <span>Accessories </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/ClientSoftware">
+                    {" "}
+                    <span>Client Software </span>
+                  </Link>
+
                   {/* <span>Phasing Out</span> */}
                 </div>
               )}
             </div>
-            <span>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/Solutions"
-              >
-                Solutions
-              </Link>
-            </span>
-            <span>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/News-Feed"
-              >
-                News&Events{" "}
-              </Link>
-            </span>
-            <span>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/Support"
-              >
-                Support
-              </Link>
-            </span>
+
+            <Link
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "10px",
+              }}
+              to="/Solutions"
+            >
+              <span> Solutions </span>
+            </Link>
+
+            <Link
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
+              }}
+              to="/News-Feed"
+            >
+              <span> News&Events</span>
+            </Link>
+
+            <Link
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
+              }}
+              to="/Support"
+            >
+              <span> Support</span>
+            </Link>
+
             <div
+              style={{ padding: "8px" }}
               onClick={onMyAccountShowDropDown}
               className="header-dropdown"
               // onMouseEnter={handleProductsMouseEnter}
               // onMouseLeave={handleProductsMouseLeave}
             >
-              <span>
+              <span id="header-color" style={{ padding: "10px" }}>
                 My account <IoIosArrowDown />
               </span>
               {myAccountShow && (
                 <div className="header-dropdown-content">
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/Loginpage"
-                    >
-                      Login
-                    </Link>
-                  </span>
-                  <span>
-                    <Link
-                      style={{ textDecoration: "none", color: "black" }}
-                      to="/RegisterForm"
-                    >
-                      New Register
-                    </Link>
-                  </span>
+                  <Link style={{ textDecoration: "none" }} to="/Loginpage">
+                    <span>Login </span>
+                  </Link>
+
+                  <Link style={{ textDecoration: "none" }} to="/RegisterForm">
+                    {" "}
+                    <span>New Register</span>
+                  </Link>
                 </div>
               )}
             </div>
-            <span>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/Contactus"
-              >
-                Contact Us
-              </Link>
-            </span>
+
+            <Link
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
+              }}
+              to="/Contactus"
+            >
+              <span> Contact Us</span>
+            </Link>
           </div>
         </div>
         <div className="header-search-main">
@@ -220,23 +214,33 @@ export const Header = () => {
           </span>
           {visible && (
             <div className="header-hamb-content" onClick={handleDisplay}>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/Aboutus"
-              >
+              <Link style={{ textDecoration: "none" }} to="/Aboutus">
                 <span>About</span>
               </Link>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/ProductDetails"
-              >
-                <span>Products</span>
-              </Link>
-              <span></span>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="/Support"
-              >
+              {/* <Link
+                style={{ textDecoration: "none" }}
+                to="/NetworkingCameras"
+              > */}
+              <div onMouseEnter={MouseEnter} onMouseLeave={Mouseleave}>
+                {" "}
+                <span id="products-hover">
+                  <IoIosArrowDropleft />
+                  Products
+                </span>
+                {hover && (
+                  <div className="header-hover-display-list">
+                    <span>Network Cameras</span>
+                    <span>NetworkVideo Recorders</span>
+                    <span>HD Analog Cameras</span>
+                    <span>HD DVRs</span>
+                    <span>Network Storage</span>
+                    <span>Codecs</span>
+                    <span>Accessories</span>
+                    <span>Client Software</span>
+                  </div>
+                )}{" "}
+              </div>
+              <Link style={{ textDecoration: "none" }} to="/Support">
                 <span>Solution</span>
               </Link>
               <span>News&Events</span>
