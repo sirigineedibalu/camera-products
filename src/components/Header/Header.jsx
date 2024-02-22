@@ -16,6 +16,7 @@ export const Header = () => {
   let [hover, setHover] = useState(false);
 
   const handleProductsClick = () => {
+    console.log("ghjk");
     setProductsDropdownVisibility(!isProductsDropdownVisible);
   };
 
@@ -33,6 +34,7 @@ export const Header = () => {
     setNotHover(hover);
   };
 
+  console.log(isProductsDropdownVisible);
   return (
     <div
       style={{
@@ -62,19 +64,19 @@ export const Header = () => {
               activeClassName="active"
               style={{
                 textDecoration: "none",
-                padding: "8px",
+                padding: "10px",
                 marginLeft: "20px",
               }}
               to="/Aboutus"
             >
               <span>About </span>
             </NavLink>
-            <div
-              style={{ padding: "10px" }}
-              className="header-dropdown"
-              onClick={handleProductsClick}
-            >
-              <span id="header-color" style={{ padding: "8px" }}>
+            <div style={{ padding: "10px" }} className="header-dropdown">
+              <span
+                onClick={handleProductsClick}
+                id="header-color"
+                style={{ padding: "10px" }}
+              >
                 Products
                 <IoIosArrowDown />
               </span>
@@ -220,7 +222,7 @@ export const Header = () => {
               style={{ textDecoration: "none", color: "black" }}
               to="/Aboutus"
             >
-              <span>About</span>
+              <span onClick={handleDisplay}>About</span>
             </Link>
             {/* <Link
                 style={{ textDecoration: "none" }}
@@ -232,42 +234,66 @@ export const Header = () => {
             {hover && (
               <div className="header-hover-display-list">
                 <Link
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", color: "black" }}
                   to="/NetworkingCameras"
                 >
-                  <span>IP Cameras</span>{" "}
+                  <span onClick={handleDisplay}>IP Cameras</span>{" "}
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/NetworkingVideos">
-                  <span>NVRs </span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/NetworkingVideos"
+                >
+                  <span onClick={handleDisplay}>NVRs </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/HDAnalog">
-                  <span>Analog Cameras </span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/HDAnalog"
+                >
+                  <span onClick={handleDisplay}>Analog Cameras </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/HDdvrs">
-                  <span>DVRs </span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/HDdvrs"
+                >
+                  <span onClick={handleDisplay}>DVRs </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/NetworkStorage">
-                  <span>Network Storage </span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/NetworkStorage"
+                >
+                  <span onClick={handleDisplay}>Network Storage </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/Codec">
-                  <span>Switches </span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/Codec"
+                >
+                  <span onClick={handleDisplay}>Switches </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/Accessories">
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/Accessories"
+                >
                   <span>Accessories </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/ClientSoftware">
-                  <span>Client Software </span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/ClientSoftware"
+                >
+                  <span onClick={handleDisplay}>Client Software </span>
                 </Link>
 
-                <Link style={{ textDecoration: "none" }} to="/Others">
-                  <span>Others</span>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/Others"
+                >
+                  <span onClick={handleDisplay}>Others</span>
                 </Link>
               </div>
             )}
@@ -275,7 +301,7 @@ export const Header = () => {
               style={{ textDecoration: "none", color: "black" }}
               to="/Support"
             >
-              <span>Solution</span>
+              <span onClick={handleDisplay}>Solution</span>
             </Link>
             <Link
               // id="header-color"
@@ -285,7 +311,7 @@ export const Header = () => {
               }}
               to="/News-Feed"
             >
-              <span> News&Events</span>
+              <span onClick={handleDisplay}> News&Events</span>
             </Link>
 
             <Link
@@ -296,10 +322,25 @@ export const Header = () => {
               }}
               to="/Support"
             >
-              <span> Support</span>
+              <span onClick={handleDisplay}> Support</span>
             </Link>
-            <span>My Account</span>
-            <span>Contact Us</span>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/Loginpage"
+            >
+              <span onClick={handleDisplay}>Login </span>
+            </Link>
+            <NavLink
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
+              }}
+              to="/Contactus"
+            >
+              <span onClick={handleDisplay}> Contact Us</span>
+            </NavLink>
           </div>
         )}
       </div>

@@ -90,19 +90,19 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        {/* <div className="copy-right-container">
-          <span>
-            Copyright © 2024 Trinai. All Rights Reserved, Site by{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "rgb(177, 171, 171)" }}
-              href="https://www.brihaspathi.com/"
-            >
-              Brihaspathi Technologies Pvt Ltd
-            </a>
-          </span>
-        </div> */}
+      </div>
+      <div className="copy-right-container">
+        <span>
+          Copyright © 2024 Trinai. All Rights Reserved, Site by{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "rgb(177, 171, 171)" }}
+            href="https://www.brihaspathi.com/"
+          >
+            Brihaspathi Technologies Pvt Ltd
+          </a>
+        </span>
       </div>
     </div>
   );
