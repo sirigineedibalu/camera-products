@@ -40,7 +40,7 @@ export const Newspage = ({ newsFeddId }) => {
   }, []);
 
   return (
-    <div id="sectionId" ref={refValue}>
+    <div id="sectionId" className="main-news-page" ref={refValue}>
       <div className="np-img-container">
         <img
           style={{ width: "100%", height: "100%" }}

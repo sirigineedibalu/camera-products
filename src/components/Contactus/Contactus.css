@@ -1,75 +1,59 @@
-.contact-us-container {
-  /* max-width: 600px; */
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 20px;
+.Contact-us-main-container {
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  /* border: 2px solid red; */
+  /* justify-content: space-between; */
+  margin-top: 85px;
+  padding: 20px;
+  gap: 1rem;
 }
-
-.contact-form {
+.query-form {
+  width: 100%;
+  border: 1px solid rgb(148, 141, 141);
+  padding: 40px;
+}
+.query-form-sub-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 500px;
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
-
-.contact-label {
-  margin-bottom: 8px;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid orange; */
 }
-
-.contactus-input {
-  padding: 8px;
-  margin-bottom: 16px;
+.form-label {
+  display: flex;
+  flex-direction: column;
 }
-
-.contact-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  border: none;
-  margin-top: 20px;
+.query-side-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
-
-.contact-button:hover {
-  background-color: #45a049;
+.select-label-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100px; */
+  width: 50%;
+  /* border: 1px solid red; */
+}
+#select-option {
+  height: 40px;
+  /* border: 1px solid rgb(255, 17, 17); */
 }
 .Contact-us-maps-location {
-  width: 500px;
-  /* border: 1px solid red; */
-  height: 100%;
-  /* padding: 10px; */
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
 }
+/* .form-button {
+  width: 200px;
+} */
+
 @media (max-width: 768px) {
-  .contact-us-container {
-    /* max-width: 600px; */
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 20px;
-    display: flex;
+  .Contact-us-main-container {
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   }
   .Contact-us-maps-location {
-    width: 100%;
-    /* border: 1px solid red; */
-    height: 100%;
-    /* padding: 10px; */
-    margin-top: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 20px;
   }
 }

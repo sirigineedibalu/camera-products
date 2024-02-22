@@ -83,6 +83,7 @@ function App() {
           <Route path="/BankingSolutions" element={<BankingSolution />} />
           <Route path="/Login" element={<Loginpage />} />
           <Route path="/Register" element={<RegisterForm />} />
+          <Route path="/Others" element={<CommonCompo />} />
         </Routes>
         <Footer />
       </Routers>

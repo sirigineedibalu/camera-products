@@ -5,14 +5,15 @@ import { TfiEmail } from "react-icons/tfi";
 
 export const Footer = () => {
   const productList = [
-    "Network Cameras",
-    " Network Video Recorders",
-    "HD Analog Cameras",
-    "HD DVRs",
+    "IP Cameras",
+    "NVRs",
+    "Analog Cameras",
+    "DVRs",
     "Network Storage",
-    "Codecs",
+    "Switches",
     "Accessories",
     "Client Software",
+    "Others",
   ];
   const informationList = [
     "About us",
@@ -22,8 +23,8 @@ export const Footer = () => {
     "Contact Us",
   ];
   const contactInfo = {
-    phone: ["040-66143344", "040-66440002", "040-66440003"],
-    emails: ["Brihaspathitechnologies.com", "Trinai@brihaspathi.com"],
+    phone: ["9885888835", "9676031111", "92686 22222"],
+    emails: ["www.brihaspathi.com", "www.trinai.com"],
   };
   return (
     <div>
@@ -89,7 +90,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="copy-right-container">
+        {/* <div className="copy-right-container">
           <span>
             Copyright © 2024 Trinai. All Rights Reserved, Site by{" "}
             <a
@@ -101,7 +102,7 @@ export const Footer = () => {
               Brihaspathi Technologies Pvt Ltd
             </a>
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { IoIosArrowDown, IoIosArrowDropleft } from "react-icons/io";
+import { Link, NavLink } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineCancel } from "react-icons/md";
 
@@ -12,8 +12,8 @@ export const Header = () => {
     useState(false);
   const [visible, setVisible] = useState(false);
   const [myAccountShow, setMyAccountShow] = useState(false);
-
-  const [hover, setHover] = useState(false);
+  const [notHover, setNotHover] = useState(false);
+  let [hover, setHover] = useState(false);
 
   const handleProductsClick = () => {
     setProductsDropdownVisibility(!isProductsDropdownVisible);
@@ -27,13 +27,10 @@ export const Header = () => {
     setMyAccountShow(!myAccountShow);
   };
 
-  const MouseEnter = () => {
+  const onMobileSubListShow = () => {
+    hover = !notHover;
     setHover(hover);
-    console.log(hover);
-  };
-  const Mouseleave = () => {
-    setHover(hover);
-    console.log(!hover);
+    setNotHover(hover);
   };
 
   return (
@@ -46,9 +43,12 @@ export const Header = () => {
         <div className="header-img-container">
           <Link to="/">
             <img
-              style={{ width: "100px", height: "100px", padding: "20px 10px" }}
-              src="Images/trinai.png"
+              style={{
+                marginRight: "20px",
+              }}
+              src="Images/trinai-02.png"
               alt=""
+              className="logo-img"
             />
           </Link>
         </div>
@@ -57,14 +57,18 @@ export const Header = () => {
             id="display"
             className={`header--listitems-con ${visible ? "menu-open" : ""}`}
           >
-            <Link
+            <NavLink
               id="header-color"
               activeClassName="active"
-              style={{ textDecoration: "none", padding: "10px" }}
+              style={{
+                textDecoration: "none",
+                padding: "8px",
+                marginLeft: "20px",
+              }}
               to="/Aboutus"
             >
               <span>About </span>
-            </Link>
+            </NavLink>
             <div
               style={{ padding: "10px" }}
               className="header-dropdown"
@@ -74,68 +78,66 @@ export const Header = () => {
                 Products
                 <IoIosArrowDown />
               </span>
+
               {isProductsDropdownVisible && (
                 <div className="header-dropdown-content">
                   <Link
                     style={{ textDecoration: "none" }}
                     to="/NetworkingCameras"
                   >
-                    <span>Network Cameras</span>{" "}
+                    <span>IP Cameras</span>{" "}
                   </Link>
 
                   <Link
                     style={{ textDecoration: "none" }}
                     to="/NetworkingVideos"
                   >
-                    <span>Network Video Recorders </span>
+                    <span>NVRs </span>
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/HDAnalog">
-                    <span>HD Analog Cameras </span>
+                    <span>Analog Cameras </span>
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/HDdvrs">
-                    <span>HD DVRs </span>
+                    <span>DVRs </span>
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/NetworkStorage">
-                    {" "}
                     <span>Network Storage </span>
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/Codec">
-                    {" "}
-                    <span>Codecs </span>
+                    <span>Switches </span>
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/Accessories">
-                    {" "}
                     <span>Accessories </span>
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/ClientSoftware">
-                    {" "}
                     <span>Client Software </span>
                   </Link>
 
-                  {/* <span>Phasing Out</span> */}
+                  <Link style={{ textDecoration: "none" }} to="/Others">
+                    <span>Others</span>
+                  </Link>
                 </div>
               )}
             </div>
-
-            <Link
+            <NavLink
               id="header-color"
               style={{
                 textDecoration: "none",
                 color: "#232323",
-                padding: "10px",
+                padding: "8px",
               }}
               to="/Solutions"
             >
               <span> Solutions </span>
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               id="header-color"
               style={{
                 textDecoration: "none",
@@ -145,7 +147,7 @@ export const Header = () => {
               to="/News-Feed"
             >
               <span> News&Events</span>
-            </Link>
+            </NavLink>
 
             <Link
               id="header-color"
@@ -176,14 +178,13 @@ export const Header = () => {
                   </Link>
 
                   <Link style={{ textDecoration: "none" }} to="/RegisterForm">
-                    {" "}
                     <span>New Register</span>
                   </Link>
                 </div>
               )}
             </div>
 
-            <Link
+            <NavLink
               id="header-color"
               style={{
                 textDecoration: "none",
@@ -193,7 +194,7 @@ export const Header = () => {
               to="/Contactus"
             >
               <span> Contact Us</span>
-            </Link>
+            </NavLink>
           </div>
         </div>
         <div className="header-search-main">
@@ -212,44 +213,95 @@ export const Header = () => {
               <RxHamburgerMenu size={22} />
             )}
           </span>
-          {visible && (
-            <div className="header-hamb-content" onClick={handleDisplay}>
-              <Link style={{ textDecoration: "none" }} to="/Aboutus">
-                <span>About</span>
-              </Link>
-              {/* <Link
+        </div>
+        {visible && (
+          <div className="header-hamb-content">
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/Aboutus"
+            >
+              <span>About</span>
+            </Link>
+            {/* <Link
                 style={{ textDecoration: "none" }}
                 to="/NetworkingCameras"
               > */}
-              <div onMouseEnter={MouseEnter} onMouseLeave={Mouseleave}>
-                {" "}
-                <span id="products-hover">
-                  <IoIosArrowDropleft />
-                  Products
-                </span>
-                {hover && (
-                  <div className="header-hover-display-list">
-                    <span>Network Cameras</span>
-                    <span>NetworkVideo Recorders</span>
-                    <span>HD Analog Cameras</span>
-                    <span>HD DVRs</span>
-                    <span>Network Storage</span>
-                    <span>Codecs</span>
-                    <span>Accessories</span>
-                    <span>Client Software</span>
-                  </div>
-                )}{" "}
-              </div>
-              <Link style={{ textDecoration: "none" }} to="/Support">
-                <span>Solution</span>
-              </Link>
-              <span>News&Events</span>
-              <span>Support</span>
-              <span>My Account</span>
-              <span>Contact Us</span>
+            <div onClick={onMobileSubListShow} className="prodtxcvghj">
+              <span id="products-hover">Products</span>{" "}
             </div>
-          )}
-        </div>
+            {hover && (
+              <div className="header-hover-display-list">
+                <Link
+                  style={{ textDecoration: "none" }}
+                  to="/NetworkingCameras"
+                >
+                  <span>IP Cameras</span>{" "}
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/NetworkingVideos">
+                  <span>NVRs </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/HDAnalog">
+                  <span>Analog Cameras </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/HDdvrs">
+                  <span>DVRs </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/NetworkStorage">
+                  <span>Network Storage </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/Codec">
+                  <span>Switches </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/Accessories">
+                  <span>Accessories </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/ClientSoftware">
+                  <span>Client Software </span>
+                </Link>
+
+                <Link style={{ textDecoration: "none" }} to="/Others">
+                  <span>Others</span>
+                </Link>
+              </div>
+            )}
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/Support"
+            >
+              <span>Solution</span>
+            </Link>
+            <Link
+              // id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+              }}
+              to="/News-Feed"
+            >
+              <span> News&Events</span>
+            </Link>
+
+            <Link
+              // id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+              }}
+              to="/Support"
+            >
+              <span> Support</span>
+            </Link>
+            <span>My Account</span>
+            <span>Contact Us</span>
+          </div>
+        )}
       </div>
     </div>
   );

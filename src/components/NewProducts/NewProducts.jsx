@@ -45,6 +45,7 @@ export const NewProducts = () => {
       <div id="parent" className="newprod-container">
         {Products.map((i) => (
           <div className="new-main-imgcon">
+            <span style={{ color: "rgb(7, 124, 173)" }}>2 MP</span>
             <div className="new-img-conta">
               <img
                 style={{

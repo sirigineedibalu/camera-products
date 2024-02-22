@@ -45,6 +45,7 @@ export const Trendingproducts = () => {
       <div id="secondpare" className="trendprod-container">
         {Products.map((i) => (
           <div className="trend-main-imgcon">
+            <span style={{ color: "rgb(0, 172, 252)" }}>2 MP</span>
             <div className="trend-img-conta">
               <img
                 style={{

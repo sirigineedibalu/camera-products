@@ -961,46 +961,54 @@ export const newPTZ = [
     subCams: [],
     cams: [
       {
-        id: "Encoders",
-        image:
-          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Encoder/DVS4104.png",
-        name: "VS4104",
+        id: "4-Port",
+        image: "Images/Poe Switches/4 port poe.png",
+        name: "TRINAI- 4Port PoE Switch",
         des: "4 channel video and audio inputs, Full channel 960H realtime encoding",
-        subId: "Encoders",
+        subId: "4-Port",
       },
+      // {
+      //   id: "4-Port",
+      //   image:
+      //     "https://www.univiewworld.in/Products/Uniview-2016/Codec/Encoder/DVS4116.png",
+      //   name: "DVS4116",
+      //   des: "16 channel video and audio inputs, H.264 video compression, Dual stream Encoder",
+      //   subId: "4-Port",
+      // },
+
+      //   8-Port
       {
-        id: "Encoders",
-        image:
-          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Encoder/DVS4116.png",
-        name: "DVS4116",
-        des: "16 channel video and audio inputs, H.264 video compression, Dual stream Encoder",
-        subId: "Encoders",
-      },
-      //   Decoders
-      {
-        id: "Decoders",
-        image:
-          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC4304-IN.png",
-        name: "DC4304-IN",
+        id: "8-Port",
+        image: "Images/Poe Switches/8 port poe.png",
+        name: "8 Port PoE + 2 Uplink Port PoE Switch",
         des: "4-Ch HD Video Decoder, 1/3/4/7/9/16 display split, HDMI and VGA Video input",
-        subId: "Decoders",
+        subId: "8-Port",
       },
+      // {
+      //   id: "8-Port",
+      //   image:
+      //     "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC4308-IN.png",
+      //   name: "8 Port PoE + 2 Uplink Port PoE Switch",
+      //   des: "ONVIF conformance stream decoding, 1/4/9/16 display split, H.264 compression",
+      //   subId: "8-Port",
+      // },
+
+      // 16-Port
       {
-        id: "Decoders",
-        image:
-          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC4308-IN.png",
-        name: "DC4308-IN",
-        des: "ONVIF conformance stream decoding, 1/4/9/16 display split, H.264 compression",
-        subId: "Decoders",
-      },
-      {
-        id: "Decoders",
-        image:
-          "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC5301.png",
+        id: "16-Port",
+        image: "Images/Poe Switches/16 port poe.png",
         name: "DC5301",
         des: "Decode video stream at of 12MP, 8MP, 6MP, 5MP, 4MP, 3MP, 1080P, 960P, 720P, D1, CIF",
-        subId: "Decoders",
+        subId: "16-Port",
       },
+      // {
+      //   id: "16-Port",
+      //   image:
+      //     "https://www.univiewworld.in/Products/Uniview-2016/Codec/Decoder/DC5301.png",
+      //   name: "DC5301",
+      //   des: "Decode video stream at of 12MP, 8MP, 6MP, 5MP, 4MP, 3MP, 1080P, 960P, 720P, D1, CIF",
+      //   subId: "16-Port",
+      // },
     ],
   },
   {
@@ -1450,6 +1458,61 @@ export const newPTZ = [
         name: "UNV-EZStation-v2",
         des: "EZStation Video Management Software",
         subId: "Pc-software",
+      },
+    ],
+  },
+  {
+    name: "/Others",
+    subCams: [],
+    cams: [
+      {
+        id: "2U TechnoRack",
+        image: "Images/Techno Racks/technorack 2U.png",
+        name: "2U TechnoRack",
+        des: "The Dimention Of 2U DVR rack Length x Width x Height : 40cm x 40cm x 15cm.",
+        subId: "2U TechnoRack",
+      },
+      {
+        id: "4U TechnoRack",
+        image: "Images/Techno Racks/technorack 4U.png",
+        name: "4U TechnoRack",
+        des: "The Dimention Of 4U DVR rack Length x Width x Height : 45cm x 55cm x 25.5cm.",
+        subId: "4U TechnoRack",
+      },
+      {
+        id: "9U TechnoRack",
+        image: "Images/Techno Racks/technorack 9U.png",
+        name: "9U TechnoRack",
+        des: "Easy Wall Mount Rack With Lock & Key. Max Loading 60 kg",
+        subId: "9U TechnoRack",
+      },
+      {
+        id: "12U TechnoRack",
+        image: "Images/Techno Racks/technorack 12U.png",
+        name: "12U TechnoRack",
+        des: "Easy Wall Mount Rack With Lock & Key. Max Loading 60 kg",
+        subId: "12U TechnoRack",
+      },
+      {
+        id: "15U TechnoRack",
+        image: "Images/Techno Racks/technorack 15U.png",
+        name: "15U TechnoRack",
+        des: "Easy Wall Mount Rack With Lock & Key. Max Loading 60 kg",
+        subId: "15U TechnoRack",
+      },
+      {
+        id: "27U TechnoRack",
+        image: "Images/Techno Racks/technorack 27u.png",
+        name: "27U TechnoRack",
+        des: "Easy Wall Mount Rack With Lock & Key. Max Loading 60 kg",
+        subId: "27U TechnoRack",
+      },
+      {
+        id: "Information-Kiosk",
+        image: "Images/Techno Racks/_T0A4361 1.png",
+        name: "Information-Kiosk",
+        des: "Easy Wall Mount Rack With Lock & Key. Max Loading 60 kg",
+        subId: "Information-Kiosk",
       },
     ],
   },

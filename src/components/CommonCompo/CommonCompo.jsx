@@ -5,37 +5,6 @@ import "./CommonCompo.css";
 const CommonCompo = () => {
   const location = useLocation();
   const pathValue = location.pathname;
-  // this both are stored all single cams like networks all
-  // const [secondData, setSecondData] = useState([]);
-  // const [singleCamsData, setSingleCamsData] = useState([]);
-
-  // // this two states are store initailly cams like ptz
-  // const [newFilterSubCam, setNewFilterSubCam] = useState([]);
-  // const [initialAllArray, setInitialAllArray] = useState([]);
-
-  // // if subCams present stores that data
-
-  // const [subCams, setSubCams] = useState([]);
-
-  // const [filterSubCams, setFilterSubCams] = useState([]);
-
-  // // store pixles data as uniques values Ex ptz all uniques pixels
-  // const [uniquesPixs, setUniquesPix] = useState([]);
-  // //
-  // //
-  // const [initialDisplay, setInitialDisplay] = useState("");
-
-  // const [pixelInitial, setPixelInitial] = useState("");
-
-  //
-  //
-
-  //
-  //
-  //
-  //
-  //
-  //
 
   const [firstInitialData, setFirstInitialData] = useState([]);
   const [secondInitialData, setSecondInitialData] = useState([]);
@@ -66,6 +35,7 @@ const CommonCompo = () => {
     setFirstInitialData(filterData);
     setSecondInitialData(filterData);
   }, [pathValue]);
+  // console.log(secondInitialData);
 
   useEffect(() => {
     if (firstInitialData[0]?.subCams.length > 0) {

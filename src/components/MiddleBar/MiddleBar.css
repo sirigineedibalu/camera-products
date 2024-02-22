@@ -20,8 +20,8 @@
 }
 
 .middle-img-container {
-  width: 500px;
-  height: 350px;
+  /* width: 500px;
+  height: 350px; */
   /* border: 1px solid red;  */
 }
 .middle-img-matter {
@@ -85,7 +85,7 @@
     align-items: center;
     width: 100%;
     /* padding: 10px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .middle-color-con {
     display: block;
@@ -98,7 +98,7 @@
   .middle-img-matter {
     width: 100%;
     /* height: 100%; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -110,7 +110,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .middle-color-con {

@@ -1,15 +1,16 @@
 .bank-img-container {
   width: 100%;
   height: 25vh;
+  /* border: 1px solid red; */
+  margin-top: 95px;
 }
 .bank-heading {
-  /* color: #fff; */
   position: absolute;
   top: -12%;
-  left: 21%;
-  /* border: 1px solid red; */
+  left: 35%;
+  color: #fff;
 }
-#heading-background {
+/* #heading-background {
   background-image: url("D:/projects/trinai/public/Images/title.jpg");
   padding: 0px 120px 0px 15px;
   width: 260px;
@@ -19,7 +20,7 @@
   color: #fff;
   display: inline-block;
   background-size: cover;
-}
+} */
 
 .bank-support-container {
   width: 100%;

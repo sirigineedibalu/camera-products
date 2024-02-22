@@ -3,7 +3,7 @@ import "./Aboutus.css";
 
 export const Aboutus = () => {
   return (
-    <div>
+    <div className="main-aboveus">
       <div className="aboutus-image-container">
         <img
           style={{ width: "100%", height: "100%" }}
@@ -22,51 +22,55 @@ export const Aboutus = () => {
           </div>
           <div className="about-first-0para span">
             <h5 id="headingcolor">
-              WE ARE THE NUMBER ONE SOURCE FOR EVERYTHING RELATED TO
-              SURVEILLANCE
+              TRINAI: Your Premier Destination for All Surveillance Solutions:
             </h5>
             <span>
-              Trinai aims to bring you the most sophisticated and branded CCTV
-              surveillance systems that can combine high volumes to data to
-              produce significant and meaningful information. The systems
-              provide users with advanced scrutiny, analysis, interpretation,
-              and management. They aid in the deployment of quick and
-              intelligent security system solutions through a comprehensive
-              analysis based on the position and location of the device. As the
-              fastest growing data type today, videos are in constant demand due
-              to their ability to drive efficiency and the effectuality into
-              search capabilities. Leverage surveillance video data for security
-              with the help of our video management systems that have the unique
-              capacity to provide recorded data with amazing accuracy. Use our
-              systems to prevent loss at every step or if you just wish to gain
-              an insight into your in-store trends and customers’ buying habits.
-              You can also utilize our effective and vast video search
-              functionality to facilitate recognition of specific criteria such
-              as license plate numbers, objects’ attributes, facial images, etc.
+              TRINAI has proudly expanded its production capabilities in
+              Telangana, Hyderabad. This manufacturing hub is focused on the
+              production of a diverse range of top-notch surveillance products.
+              Positioned at the forefront of the Internet of Things (IoT)
+              revolution, TRINAI is unwavering in its commitment to crafting an
+              intelligent world that not only prioritizes security but also
+              thrives on enhanced efficiency and unparalleled convenience.
+              TRINAI stands as the ultimate source for surveillance solutions,
+              redefining the landscape with branded CCTV systems. With a focus
+              on the position and location of each device, TRINAI's surveillance
+              systems provide a comprehensive analysis, delivering efficiency
+              and efficacy in safeguarding your spaces.
             </span>
             <span>
-              As India’s trusted CCTV Company, Trinai provides its customers
-              with powerful end-to-end video analytics solutions with the best
-              surveillance cameras along with integrative proficiency to better
-              understand your customer behavior and other crucial operational
-              indices. Increase your conversion rates, optimize your staff
-              levels and simultaneously improve your customer experience with
-              Trinai CCTV and Security Solutions.
+              In a world where video data reigns supreme, TRINAI is your ally,
+              offering video management systems that uniquely provide recorded
+              data with unparalleled accuracy. As the trusted authority, TRINAI
+              goes beyond being a CCTV brand. We deliver powerful video
+              solutions coupled with top-tier surveillance cameras and
+              integrative proficiency. Quality is the hallmark of TRINAI
+              products, subjected to rigorous tests and holding prestigious
+              international certifications such as FC, CE, BIS, and ROHS
+              Compliant. As India’s trusted CCTV Company, Trinai provides its
+              customers with powerful end-to-end video analytics solutions with
+              the best surveillance cameras along with integrative proficiency
+              to better understand your customer behavior and other crucial
+              operational indices. Increase your conversion rates, optimize your
+              staff levels and simultaneously improve your customer experience
+              with Trinai CCTV and Security Solutions.
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">Product</h5>
+            <h5 id="headingcolor">Product</h5>
             <span>
-              Our company specialises in providing our valued customers with a
-              range of products ranging from the latest network cameras to
-              biometric devices to accessories. We continuously embark on
-              introducing some of the newest surveillance methodologies that
-              elevate existing security conditions to impenetrable security
-              styles.
+              TRINAI takes pride in its specialization, offering a diverse array
+              of security solutions, ranging from network cameras to
+              accessories. We are committed to constant innovation, continuously
+              introducing the latest surveillance approach that transcend
+              conventional boundaries. At TRINAI, we don't just provide
+              products; we engineer solutions that redefine security paradigms,
+              ensuring our valued customers experience the pinnacle of safety
+              and technological sophistication.
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">Network Cameras</h5>
+            <h5 id="headingcolor">Next-Gen Network Cameras</h5>
             <span>
               In Network Cameras,Trinai offers the Premium Series, Quartz
               Series, Rapid Series, Velocity Series and IP PTZ Cameras. All of
@@ -76,7 +80,7 @@ export const Aboutus = () => {
           </div>
           <div className="about-first-0para">
             {/* id="headingcolor" */}
-            <h5 id="heading-background">HD Cameras</h5>
+            <h5 id="headingcolor">HD Cameras</h5>
             <span>
               Our catalogue of HD Analog Cameras consists of surveillance
               devices with resolutions starting from 720P to 4MP. Additionally,
@@ -85,7 +89,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">Network Video Recorders</h5>
+            <h5 id="headingcolor">Network Video Recorders</h5>
             <span>
               An integral part of any surveillance device that undertakes data
               storage, we have NVRs compatible with practically every device
@@ -94,7 +98,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">HD Recorders</h5>
+            <h5 id="headingcolor">HD Recorders</h5>
             <span>
               For those who are inclined to high definition viewing, we have HD
               recorders that are complemented with the Premium Series, Premium
@@ -103,7 +107,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">POE Switches</h5>
+            <h5 id="headingcolor">POE Switches</h5>
             <span>
               Our POE switches are a simple yet powerful solution for installing
               networked video surveillance systems. Safety is always ensured
@@ -114,7 +118,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">Video Door Phones</h5>
+            <h5 id="headingcolor">Video Door Phones</h5>
             <span>
               We provide IP Video Door Phones as well as standard Video Door
               Phones. Offering three tier security, our IP VDPs are considered
@@ -124,7 +128,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">
+            <h5 id="headingcolor">
               Mobile DVRs, Mobile Cameras and Artificial Intelligence
             </h5>
             <span>
@@ -135,7 +139,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">Biometric Systems</h5>
+            <h5 id="headingcolor">Biometric Systems</h5>
             <span>
               ObtainTrinai’s biometric systems that capture validations on the
               basis of several biological patterns inclusive of iris
@@ -145,7 +149,7 @@ export const Aboutus = () => {
             </span>
           </div>
           <div className="about-first-0para">
-            <h5 id="heading-background">Video storage services</h5>
+            <h5 id="headingcolor">Video storage services</h5>
             <span>
               Immaterial of the number of video cameras that are streaming,
               Trinai provides solutions that allow you to access and retrieve

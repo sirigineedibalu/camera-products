@@ -4,17 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const MiddleBar = () => {
   return (
     <div className="middle-main-con">
-      <h2>
+      <h2 className="hedhuhd">
         <b>ADVANCED SECURITY AND SURVEILLANCE SOLUTIONS</b>
       </h2>
       {/* 1 */}
       <div className="middle-container">
         <div className="middle-img-container">
-          <img
-            style={{ width: "100%", height: "100%" }}
-            src="Images/DOME (2).png"
-            alt=""
-          />
+          <img style={{ width: "100%" }} src="Images/DOME (2).png" alt="" />
         </div>
         <div className="middle-img-matter">
           <h1>VELOCITY SERIES</h1>
@@ -22,9 +18,9 @@ export const MiddleBar = () => {
             <i>NETWORK CAMERAS</i>
           </h3>
           <span>
-            HI-Focus AI CCTV cameras are network IP cameras that deliver
-            advanced analytical functions like vehicle detection, Face
-            recognition, Face detection, people counting.
+            Trinai AI CCTV cameras are network IP cameras that deliver advanced
+            analytical functions like vehicle detection, Face recognition, Face
+            detection, people counting.
           </span>
           <center>
             {" "}

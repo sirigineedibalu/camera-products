@@ -33,11 +33,9 @@ const BankingSolution = () => {
       {filterData?.map((i) => (
         <div className="bank-support-container">
           <div className="bank-heading">
-            <h1>
-              {/* <b>
-                <center>{i.name}</center>
-              </b> */}
-            </h1>
+            <h4>
+              <center>Solutions/{i.name}</center>
+            </h4>
           </div>
           <div className="bank-hero-container">
             <span>{i.span1}</span>

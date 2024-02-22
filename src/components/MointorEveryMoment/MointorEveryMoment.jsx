@@ -5,13 +5,13 @@ export const MointorEveryMoment = () => {
   return (
     <div className="mointor-main-img">
       <div className="monitor-back-page">
-        <h1 style={{ fontSize: "60px" }}>
+        <h1>
           <b>Monitor Every Moment</b>
         </h1>
         <span>
-          Hi-Focus is a Security Solutions Provider, We specialize in total
+          Trinai is a Security Solutions Provider, We specialize in total
           integrated surveillance, Data Communication and Storage Solutions
-          Hi-Focus is a Security Solutions Provider, We specialize in total
+          Trinai is a Security Solutions Provider, We specialize in total
           integrated surveillance, Data Communication and Storage Solutions
         </span>
         <Link

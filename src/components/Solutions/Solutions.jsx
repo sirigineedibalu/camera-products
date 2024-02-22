@@ -121,11 +121,11 @@ export const Solutions = () => {
                 and relaying live video streams, users can monitor airport
                 activities even off-location.
               </span>
-              <div>
-                <Link to="/BankingSolutions" state={{ name: "1" }}>
-                  <button className="btn btn-info"> Read More</button>
-                </Link>
-              </div>
+            </div>
+            <div className="button-position">
+              <Link to="/BankingSolutions" state={{ name: "1" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
 
             <div className="sol-background-div2">
@@ -177,11 +177,11 @@ export const Solutions = () => {
                 allows coordination between the security personnel and aids in
                 crime investigation.
               </span>
-              <div>
-                <Link to="/BankingSolutions" state={{ name: "2" }}>
-                  <button className="btn btn-info"> Read More</button>
-                </Link>
-              </div>
+            </div>{" "}
+            <div className="button-position-right">
+              <Link to="/BankingSolutions" state={{ name: "2" }}>
+                <button className="btn btn-info"> Read More</button>
+              </Link>
             </div>
             <div className="sol-background-div1">
               <img
@@ -228,6 +228,8 @@ export const Solutions = () => {
                 can experience decreasing liability from frivolous lawsuits and
                 claims.
               </span>
+            </div>
+            <div className="button-position">
               <Link to="/BankingSolutions" state={{ name: "3" }}>
                 <button className="btn btn-info"> Read More</button>
               </Link>
@@ -281,6 +283,8 @@ export const Solutions = () => {
                 evidence in court. This also includes ATM activity survey where
                 periodic transaction checks are conducted.
               </span>
+            </div>
+            <div className="button-position-right">
               <Link to="/BankingSolutions" state={{ name: "4" }}>
                 <button className="btn btn-info"> Read More</button>
               </Link>
@@ -327,6 +331,8 @@ export const Solutions = () => {
                 solidified with the most advanced and appropriate technologies
                 to ensure security in highly populous areas.
               </span>
+            </div>
+            <div className="button-position">
               <Link to="/BankingSolutions" state={{ name: "5" }}>
                 <button className="btn btn-info"> Read More</button>
               </Link>
@@ -378,6 +384,8 @@ export const Solutions = () => {
                 for the urban environment is developed to intelligently manage
                 traffic, daily life, transportation, assets, and infrastructure.
               </span>
+            </div>{" "}
+            <div className="button-position-right">
               <Link to="/BankingSolutions" state={{ name: "6" }}>
                 <button className="btn btn-info"> Read More</button>
               </Link>
@@ -426,6 +434,8 @@ export const Solutions = () => {
                 systems from risks and threats. These solutions also reduce the
                 liability of passenger injuries in addition to other perils.
               </span>
+            </div>
+            <div className="button-position">
               <Link to="/BankingSolutions" state={{ name: "7" }}>
                 <button className="btn btn-info"> Read More</button>
               </Link>

@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 import { Function } from "../Data/Function";
 import { General } from "../Data/General";
 import { Interface } from "../Data/Interface";
@@ -10,40 +8,84 @@ import { Smartfeatures } from "../Data/Smartfeatures";
 import { Storage } from "../Data/Storage";
 import { Vedio } from "../Data/Vedio";
 import "./Product.css";
+import { Link } from "react-router-dom";
+import { Pdf } from "../Data/PDFdata";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 export const Product = () => {
   const [Tabs, setTabs] = useState(1);
   const scroll = useRef();
 
+  const [openPreviewModal, setOpenPreviewModal] = useState(false);
+
   useEffect(() => {
     scroll.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
+  const pdfFileName = "DataSheets/AI02B030L67.pdf";
+  const pdfUrl = process.env.PUBLIC_URL + "/" + pdfFileName;
+
   const downloadPdf = async () => {
-    const capture = document.querySelector(".certificate__card");
-    const canvas = await html2canvas(capture);
+    const path = "DataSheets/AI02B030L67.pdf";
+    const pdfUrl = process.env.PUBLIC_URL + "/" + path;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", path);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
-    const pdf = new jsPDF({
-      orientation: "portrait",
-      unit: "in",
-      format: [4, 3],
-    });
+    // const capture = document.querySelector(".certificate__card");
+    // const canvas = await html2canvas(capture);
 
-    const imgData = canvas.toDataURL("image/png");
-    const width = pdf.internal.pageSize.getWidth();
-    const height = (canvas.height * width) / canvas.width;
+    // const pdf = new jsPDF({
+    //   orientation: "portrait",
+    //   unit: "in",
+    //   format: [4, 3],
+    // });
 
-    pdf.addImage(imgData, "PNG", 0, 0, width, height);
+    // const imgData = canvas.toDataURL("image/png");
+    // const width = pdf.internal.pageSize.getWidth();
+    // const height = (canvas.height * width) / canvas.width;
 
-    pdf.addPage();
-    pdf.text("Page 5 Content", 20, 30);
+    // pdf.addImage(imgData, "PNG", 0, 0, width, height);
 
-    pdf.save("Trinai Datasheet.pdf");
+    // pdf.addPage();
+    // pdf.text("Page 5 Content", 20, 30);
+
+    // pdf.save("Trinai Datasheet.pdf");
+  };
+
+  const previewPdf = () => {
+    console.log("jkl;/'");
+    setOpenPreviewModal(true);
+    // const capture = document.querySelector(".certificate__card");
+    // const canvas = await html2canvas(capture);
+
+    // const pdf = new jsPDF({
+    //   orientation: "portrait",
+    //   unit: "in",
+    //   format: [4, 3],
+    // });
+
+    // const imgData = canvas.toDataURL("image/png");
+    // const width = pdf.internal.pageSize.getWidth();
+    // const height = (canvas.height * width) / canvas.width;
+
+    // pdf.addImage(imgData, "PNG", 0, 0, width, height);
+
+    // // Open the preview in a new tab
+    // window.open(pdf.output("bloburl"), "_blank");
   };
 
   return (
     <div className="certificate__card" ref={scroll}>
-      <div className="pro-main-div">
+      <div
+        style={{
+          filter: openPreviewModal && "blur(10px)",
+        }}
+        className="pro-main-div"
+      >
         <div className="pro-details-list">
           <h2>HC-IPC-DQA4113-0280-DLS</h2>
           <span>Product Features</span>
@@ -63,15 +105,15 @@ export const Product = () => {
           </ul>
         </div>
         <div className="pro-details-image">
-          <img
-            style={{ width: "100%", height: "100%" }}
-            src="Images/ptz.png"
-            alt=""
-          />
+          <img style={{ width: "100%" }} src="Images/ptz.png" alt="" />
         </div>
       </div>
-      {/* Specifications */}
-      <div className="pro-maindiv-container">
+      <div
+        style={{
+          filter: openPreviewModal && "blur(10px)",
+        }}
+        className="pro-maindiv-container"
+      >
         <div className="pro-main-sliderdiv">
           <div className="pro-spe-dow-list">
             <div className="pro-spe-dow-class">
@@ -104,8 +146,13 @@ export const Product = () => {
               <h4 style={{ color: "#32a8a2" }}>Cameras</h4>
               <hr />
               <div>
-                {ProductItems.map((i) => (
-                  <div>
+                {ProductItems.map((i, key) => (
+                  <div
+                  // style={{
+                  //   background: key % 2 === 0 && "lightgrey",
+                  // }}
+                  // key={key}
+                  >
                     <div className="pro-pre-list__items">
                       <div style={{ width: "20%" }}>
                         <span>{i.left}</span>
@@ -120,11 +167,16 @@ export const Product = () => {
               </div>
             </div>
             <div>
-              <h4 style={{ color: "#32a8a2" }}>Vedio</h4>
+              <h4 style={{ color: "#32a8a2" }}>Video</h4>
               <hr />
               <div>
-                {Vedio.map((i) => (
-                  <div>
+                {Vedio.map((i, key) => (
+                  <div
+                  // style={{
+                  //   background: key % 2 === 0 && "lightgrey",
+                  // }}
+                  // key={key}
+                  >
                     <div className="pro-pre-list__items">
                       <div style={{ width: "20%" }}>
                         <span>{i.left}</span>
@@ -273,20 +325,64 @@ export const Product = () => {
               <span style={{ width: "20%" }}>pdf</span>
               <button
                 style={{
-                  width: "100px",
+                  width: "150px",
                   backgroundColor: "#32a8a2",
                   color: "white",
                   border: "none",
                   borderRadius: "7px",
+                  marginRight: "20px",
                 }}
+                onClick={previewPdf}
               >
-                Download
-              </button>
+                Preview PDF
+              </button>{" "}
+              {/* src={require(i.pdf)} */}
+              {Pdf?.map((i) => (
+                <Link
+                  to="D:/projects/trinai/public/DataSheets/AI02B030L67.pdf"
+                  target="blank"
+                >
+                  <button
+                    onClick={downloadPdf}
+                    style={{
+                      width: "150px",
+                      backgroundColor: "#32a8a2",
+                      color: "white",
+                      border: "none",
+                      borderRadius: "7px",
+                    }}
+                  >
+                    Download
+                  </button>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </div>
-      <button onClick={downloadPdf}>Download</button>
+      <div>{/* <button onClick={downloadPdf}>Download PDF</button> */}</div>
+      {openPreviewModal && (
+        <div className="previewModal-main-card">
+          <div>
+            <div className="cros_preview-card">
+              <span>Show Preview</span>
+
+              <span onClick={() => setOpenPreviewModal(false)}>
+                <IoMdCloseCircleOutline size={28} />
+              </span>
+            </div>
+            <div className="main-preview-card">
+              <iframe
+                title="PDF Preview"
+                width="100%"
+                height="500px"
+                src={pdfUrl}
+                type="application/pdf"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
