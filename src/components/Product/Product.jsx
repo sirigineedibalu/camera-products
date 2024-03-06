@@ -81,9 +81,7 @@ export const Product = () => {
   return (
     <div className="certificate__card" ref={scroll}>
       <div
-        style={{
-          filter: openPreviewModal && "blur(10px)",
-        }}
+        style={{ filter: openPreviewModal && "blur(10px)" }}
         className="pro-main-div"
       >
         <div className="pro-details-list">

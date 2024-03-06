@@ -27,6 +27,7 @@ import { Accesories } from "./components/Accesories/Accesories";
 import CommonCompo from "./components/CommonCompo/CommonCompo";
 import BankingSolution from "./components/BankingSolution/BankingSolution";
 import { useState } from "react";
+
 // import { Oursolutions } from "./components/Oursolutions/Oursolutions";
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
                 <MiddleBar />
                 <Trendingproducts />
                 <MointorEveryMoment />
+
                 {/* <Oursolutions /> */}
               </>
             }

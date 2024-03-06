@@ -42,17 +42,17 @@ const CommonCompo = () => {
       setSubCams(firstInitialData[0]?.subCams);
       let initialValue = firstInitialData[0]?.subCams[0]?.name;
       setInitiallySubCams(initialValue);
-      console.log(initialValue);
+      // console.log(initialValue);
       let initialDisplayArr = firstInitialData[0]?.cams?.filter(
         (each) => each.subId === initialValue
       );
-      console.log(initialDisplayArr);
+      // console.log(initialDisplayArr);
       const uniqueCamsPix = [
         ...new Set(initialDisplayArr?.map((each) => each.id)),
       ];
       setUniquePixInitially(uniqueCamsPix[0]);
       setUniquePixls(uniqueCamsPix);
-      console.log(uniqueCamsPix[0]);
+      // console.log(uniqueCamsPix[0]);
 
       const mainData = initialDisplayArr.filter(
         (each) => each.id === uniqueCamsPix[0]
@@ -76,19 +76,19 @@ const CommonCompo = () => {
   }, [firstInitialData]);
 
   const onChangeTab = (name) => {
-    console.log(name);
-    console.log(firstInitialData[0]?.cams);
+    // console.log(name);
+    // console.log(firstInitialData[0]?.cams);
     setInitiallySubCams(name);
     let initialDisplayArr = firstInitialData[0]?.cams?.filter(
       (each) => each.subId === name
     );
-    console.log(initialDisplayArr);
+    // console.log(initialDisplayArr);
     const uniqueCamsPix = [
       ...new Set(initialDisplayArr?.map((each) => each.id)),
     ];
     setUniquePixInitially(uniqueCamsPix[0]);
     setUniquePixls(uniqueCamsPix);
-    console.log(uniqueCamsPix);
+    // console.log(uniqueCamsPix);
     const mainData = initialDisplayArr.filter(
       (each) => each.id === uniqueCamsPix[0]
     );
@@ -97,12 +97,12 @@ const CommonCompo = () => {
   };
 
   const onFunctionPixChange = (pix) => {
-    console.log(pix);
+    // console.log(pix);
     if (initiallySubCams) {
       let initialDisplayArr = firstInitialData[0]?.cams?.filter(
         (each) => each.subId === initiallySubCams
       );
-      console.log(initialDisplayArr);
+      // console.log(initialDisplayArr);
       const mainData = initialDisplayArr.filter((each) => each.id === pix);
       setUniquePixInitially(pix);
       setMainData(mainData);

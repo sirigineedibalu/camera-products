@@ -218,12 +218,17 @@ export const Header = () => {
         </div>
         {visible && (
           <div className="header-hamb-content">
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
+            <NavLink
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
+              }}
               to="/Aboutus"
             >
               <span onClick={handleDisplay}>About</span>
-            </Link>
+            </NavLink>
             {/* <Link
                 style={{ textDecoration: "none" }}
                 to="/NetworkingCameras"
@@ -297,39 +302,52 @@ export const Header = () => {
                 </Link>
               </div>
             )}
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/Support"
-            >
-              <span onClick={handleDisplay}>Solution</span>
-            </Link>
-            <Link
-              // id="header-color"
+            <NavLink
+              id="header-color"
               style={{
                 textDecoration: "none",
                 color: "#232323",
+                padding: "8px",
+              }}
+              to="/Solutions"
+            >
+              <span onClick={handleDisplay}>Solution</span>
+            </NavLink>
+            <NavLink
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
               }}
               to="/News-Feed"
             >
               <span onClick={handleDisplay}> News&Events</span>
-            </Link>
+            </NavLink>
 
-            <Link
-              // id="header-color"
+            <NavLink
+              id="header-color"
               style={{
-                textDecoration: "none",
                 color: "#232323",
+                padding: "8px",
+                textDecoration: "none",
               }}
               to="/Support"
             >
               <span onClick={handleDisplay}> Support</span>
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
+            </NavLink>
+            <NavLink
+              id="header-color"
+              style={{
+                textDecoration: "none",
+                color: "#232323",
+                padding: "8px",
+                // color: "black",
+              }}
               to="/Loginpage"
             >
               <span onClick={handleDisplay}>Login </span>
-            </Link>
+            </NavLink>
             <NavLink
               id="header-color"
               style={{
